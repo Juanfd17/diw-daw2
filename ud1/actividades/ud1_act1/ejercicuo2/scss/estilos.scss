@@ -1,0 +1,88 @@
+@use "sass:math";
+@import "reset";
+
+/* Definción de tipografía */
+
+$tipografia: 'Montserrat';
+$tam-base:1em;
+
+
+@font-face {
+    font-family: $tipografia;
+    src: url(font/Montserrat-Regular.otf), url(font/Montserrat-Regular.ttf), url(font/Montserrat-Regular.eot);
+}
+
+
+body, input, textarea,select {
+    font-family: $tipografia;
+}
+
+body{
+    margin:0 auto;
+}
+
+
+h1{
+    text-align:left;
+    font-size:2*$tam-base;
+    padding:math.div($tam-base,2);
+}
+
+
+
+
+/*=============== FORMULARIO ==================*/
+
+#formulario {
+    font-size: $tam-base;
+    padding: 2*$tam-base;
+    display:flex;
+    flex-direction:column;
+}
+
+.lineaformulario {
+    flex-basis:100%;
+    display:flex;
+    padding-bottom:math.div($tam-base,2);
+    padding-top:$tam-base;
+}
+
+
+label{
+    flex-basis: 20%;
+    text-align: left;
+    padding-right: $tam-base;
+}
+
+.contenido {
+    flex-basis:80%; 
+    text-align: left;
+}
+
+.asterisco {
+    color: red;
+    font-size: ·tam-base;
+    padding-top: math.div($tam-base,2); 
+
+}
+
+input:focus, textarea:focus { 
+   border: 2px solid green;
+   background-color: #f4eaf4;
+}
+
+textarea{
+    padding:math.div($tam-base,2);    
+}
+
+#genero{
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
+    gap:math.div($tam-base,2); 
+}
+
+input[type="radio"],
+input[type="checkbox"]{
+    margin-right:math.div($tam-base,2);
+}

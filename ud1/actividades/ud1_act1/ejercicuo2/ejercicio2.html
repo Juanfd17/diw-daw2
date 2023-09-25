@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejercicio2</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <h1>Formulario de alta</h1>
+        <form action="formulario.php" method="POST">
+            <div class="lineaformulario">
+                <label for="nombre" >Nombre</label>
+                <div class="contenido">
+                    <input type="text" required autofocus autocomplete="off" list="nombres_sugeridos">
+                    <span class="asterisco">*</span>
+                </div>
+            </div>
+
+            <!-- Lista de sugerencias -->
+        <datalist id="nombres_sugeridos">
+            <option value="Hector">
+            <option value="Miguel">
+            <option value="Marcos">
+            <option value="Luis">
+            <option value="Maximo">
+            <option value="Pablo">
+            <option value="Malva">
+            <option value="Nieves">
+            <option value="Randy">
+            <option value="Daniel">
+        </datalist>
+
+            <div class="lineaformulario">
+                <label for="apellidos">Apellidos</label>
+                <div class="contenido">
+                    <input type="text" required autocomplete="off">
+                    <span class="asterisco">*</span>
+                </div>
+            </div>
+
+            <div class="lineaformulario">
+                <label for="fechaNacimiento">Fecha de nacimiento</label>
+                <div class="contenido">
+                    <input type="date">
+                </div>
+            </div>
+
+            <div class="lineaformulario">
+                <label for="dni">DNI</label>
+                <div class="contenido">
+                    <input type="text" autocomplete="off" pattern="[0-9]{8}[TRWAGMYFPDXBNJZSQVHLCKEtrwagmyfpdxbnjzsqvhlcke]">
+                </div>
+            </div>
+
+            <div class="lineaformulario">
+                <label for="email">Email</label>
+                <div class="contenido">
+                    <input type="text" required autocomplete="off">
+                    <span class="asterisco">*</span>
+                </div>
+            </div>
+
+            <div class="lineaformulario">
+                <label for="contrasenia">Contraseña</label>
+                <div class="contenido">
+                    <input type="password" required>
+                    <span class="asterisco">*</span>
+                </div>
+            </div>
+
+            <div class="lineaformulario">
+                <label for="contrasenia">Contraseña (Repeticion)</label>
+                <div class="contenido">
+                    <input type="password" required>
+                    <span class="asterisco">*</span>
+                </div>
+            </div>
+
+            <div class="lineaformulario">
+                <label for="web">Página Web</label>
+                <div class="contenido">
+                    <input type="text" placeholder="http://www.mipagina.com" autocomplete="off">
+                </div>
+            </div>
+
+            <div class="lineaformulario">
+                <label for="edad">Edad</label>
+                <div class="contenido">
+                    <input type="number" min="10" max="100" step="5">
+                </div>
+            </div>
+
+            <div class="lineaformulario">
+                <label for="genero">Género</label>
+                <div class="contenido">
+                    <input type="radio" name="genero" value="hombre" > Masculino
+                    <input type="radio" name="genero" value="mujer"> Femenino
+                    <input type="radio" name="genero" value="mujer"> No binario
+                    <input type="radio" name="genero" value="mujer"> Prefiero no decirlo
+                </div>
+              </div>
+
+              <div class="lineaformulario">
+                <label for="">Suscribirme al boletin de novedades</label>
+                <div class="contenido">
+                    <input type="checkbox" name="spam" value="spam">
+                </div>
+             </div>
+
+            <div class="lineaformulario">
+                <label for="productoFavorito">Producto favorito</label>
+                <div class="contenido">
+                    <select name="idioma">
+                        <option value="elige">Elege uno...</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="lineaformulario">
+                <label for="comentarios">Comentarios</label>
+                <div>
+                    <textarea name="comentarios" cols="30" rows="10" placeholder="Intoduce tu contenido"></textarea>
+                </div>
+            </div>
+
+            <div class="button">
+                <button type="submit">Enviar</button>
+            </div>
+        </form>
+</body>
+</html>
