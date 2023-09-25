@@ -1,0 +1,13 @@
+$colorLetra: rgb(231, 243, 231);
+$colorFondo: rgb(23, 86, 23);
+
+$distancia: 1em;
+
+$tipoLetra: "Consolas";
+
+p{
+    color: $colorLetra;
+    background-color: $colorFondo;
+    padding: $distancia;
+    font-family: $tipoLetra;
+}

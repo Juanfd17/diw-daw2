@@ -1,0 +1,28 @@
+$altura: 10em;
+$anchura: $altura;
+$color: rgb(0, 0, 255);
+
+.container{
+    display: flex;
+}
+
+.boton{
+    width: $anchura;
+    height: $altura;
+}
+
+#caja1{
+    background-color: $color;
+}
+
+#caja2{
+    background-color:adjust-color($color, $green: +40);
+}
+
+#caja3{
+    background-color:adjust-color($color, $green: +80);
+}
+
+#caja4{
+    background-color:adjust-color($color, $green: +120);
+}
