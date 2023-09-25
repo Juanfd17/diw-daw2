@@ -1,0 +1,207 @@
+@use "sass:math";
+@import "reset";
+
+/* Definión de variables */
+
+$tam-base: 1em;
+$color-principal: #7d7d7d;
+$color-secundario: #eaeaea;
+$color-fondo: #d0d0d0;
+$color-terciario: #f8d307;
+$tipografia: "Verdana";
+
+
+//<!-- Estilos generales de la página -->
+
+body {
+    font-family: $tipografia;
+}
+
+#container {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    padding: $tam-base;
+}
+
+section {
+    padding: $tam-base;
+}
+
+h2 {
+    color: $color-principal;
+    background-color: $color-secundario;
+    font-size: 1.5 * $tam-base;
+    text-align: center;
+    padding: $tam-base*2;
+    margin-bottom: $tam-base;
+}
+
+p {
+    font-size: 1.25 * $tam-base;
+}
+
+/* Cabecera */
+
+header {
+    display: flex;
+    justify-content: center;
+    color: $color-terciario;
+    background-color: $color-fondo;
+    font-size: 3 * $tam-base;
+    padding: $tam-base;
+}
+
+/* Barra de navegación */
+
+
+nav {
+    ul {
+        margin: 0px;
+        list-style-type: none;
+        display: flex;
+        justify-content: space-around;
+        font-size: 1.5 * $tam-base;
+
+        li {
+            padding: $tam-base;
+
+            &:hover {
+                background-color: $color-principal;
+
+            }
+
+            &:hover a {
+                color: $color-terciario;
+            }
+
+
+            a {
+                text-decoration: none;
+                color: $color-principal;
+
+
+            }
+        }
+    }
+}
+
+
+/* Sección principal */
+
+
+section#principal .contenido {
+    display: flex;
+    justify-content: space-around;
+    padding: $tam-base;
+
+    .texto {
+        flex-basis: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    figure {
+        flex-basis: 20%;
+
+        img {
+            width: 80%;
+        }
+
+        figcaption {
+            text-align: center;
+        }
+    }
+}
+
+/* Sección de tecnologías */
+
+
+section#tecnologias {
+
+    .contenido {
+        padding: $tam-base;
+        display: flex;
+        justify-content: center;
+
+        table {
+            flex-basis: 50%;
+            text-align: center;
+            border: 5px solid $color-principal;
+            font-size: 1.5*$tam-base;
+            background-color: $color-secundario;
+
+            th {
+                color: $color-principal;
+            }
+
+            td {
+                padding: $tam-base;
+            }
+        }
+
+        caption {
+            caption-side: bottom;
+            padding-top: math.div($tam-base, 2);
+
+        }
+    }
+}
+
+/* Sección de CV */
+
+
+section#cv {
+    li {
+        padding: $tam-base;
+        margin: $tam-base;
+        background-color: $color-secundario;
+        border: 2px solid $color-principal;
+    }
+
+}
+
+/* Sección de contacto */
+
+
+section#contacto {
+    #formulario-contacto {
+
+        input {
+            font-family: $tipografia;
+            padding: math.div($tam-base, 2);
+
+            &:focus {
+                background-color: $color-secundario;
+
+            }
+
+        }
+
+        div {
+            display: flex;
+            padding: math.div($tam-base, 2);
+
+            label {
+                flex-basis: 10%;
+            }
+
+            input[type="text"],
+            input[type="email"] {
+                flex-basis: 50%;
+            }
+        }
+
+    }
+}
+
+/* Sección pie */
+
+
+footer {
+    text-align: center;
+    color: $color-terciario;
+    background-color: $color-principal;
+    padding: $tam-base;
+}

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejercicio1</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <header><h1>Mi Web</h1></header>
+    
+    <nav>
+        <ul>
+            <li><a href="ejercicio1.html#principal">Principal</a></li>
+            <li><a href="ejercicio1.html#tecnologias">Tecnologias</a></li>
+            <li><a href="ejercicio1.html#cv">CV</a></li>
+            <li><a href="ejercicio1.html#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+    
+    <section id="principal">
+        <h2>Principal</h2>
+
+        <div class="contenido">
+            <div class="texto">
+                <p>Añade una descripcion sobre ti</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus officia rem iusto nesciunt a perferendis debitis, voluptatem atque totam corrupti dolore deserunt vero sint praesentium asperiores voluptas cupiditate non expedita.</p>
+            </div>
+
+            <figure>
+                <img src="img/yo.png" alt="">
+                <figcaption>Este soy yo</figcaption>
+            </figure>
+        </div>
+    </section>
+
+    <section id="tecnologias">
+        <h2>tecnologias</h2>
+        <div class="contenido">
+            <table>
+                <caption>Principales tecnologías que conozco</caption>
+                <tr>
+                    <th>Frontend</th>
+                    <th>Backend</th>
+                    <th>Bases de Datos</th>
+                </tr>
+                <tr>
+                    <td>JS</td>
+                    <td>PHP</td>
+                    <td>MySQL</td>
+                </tr>
+                <tr>
+                    <td>React</td>
+                    <td>Laravel</td>
+                    <td>MongoDB</td>
+                </tr>
+            </table>
+        </div>
+    </section>
+    
+    <section id="cv">
+        <h2>CV</h2>
+        <p>Aqui iria una lista con mi CV. Cada item debe ir en un punto diferenciado</p>
+
+        <ul>
+            <li>Licenciado en filosofia por la Universidad de Sebastopol</li>
+            <li>Máster en forlayos por la Universidad de American Samoa</li>
+            <li>Máster en comer donuts</li>
+        </ul>
+    </section>
+    
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <p>Utiliza el formulario su quieres contactar conmigo</p>
+        <form action="formulario.php" method="POST" id="formulario-contacto">
+            <div>
+                <label for="" >Nombre</label>
+                <input type="text" placeholder="Intruduce tu nombre">
+            </div>
+
+            <div>
+                <label for="">Apellidos</label>
+                <input type="text" placeholder="Introduce tus apellidos">
+            </div>
+
+            <div>
+                <label for="">Email</label>
+                <input type="text" placeholder="Introduce tu email">
+            </div>
+
+            <div class="button">
+                <button type="submit">Enviar</button>
+            </div>
+        </form>
+    </section>
+
+    <footer>
+        <p>@ IES Monte Naranco, 2023</p>
+    </footer>
+</body>
+</html>
