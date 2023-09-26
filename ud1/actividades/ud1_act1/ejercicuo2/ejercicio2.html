@@ -8,7 +8,7 @@
 </head>
 <body>
     <h1>Formulario de alta</h1>
-        <form action="formulario.php" method="POST">
+        <form action="formulario.php" method="POST" id="formulario">
             <div class="lineaformulario">
                 <label for="nombre" >Nombre</label>
                 <div class="contenido">
@@ -56,7 +56,7 @@
             <div class="lineaformulario">
                 <label for="email">Email</label>
                 <div class="contenido">
-                    <input type="text" required autocomplete="off">
+                    <input type="email" required autocomplete="off">
                     <span class="asterisco">*</span>
                 </div>
             </div>
@@ -93,11 +93,24 @@
 
             <div class="lineaformulario">
                 <label for="genero">Género</label>
-                <div class="contenido">
-                    <input type="radio" name="genero" value="hombre" > Masculino
-                    <input type="radio" name="genero" value="mujer"> Femenino
-                    <input type="radio" name="genero" value="mujer"> No binario
-                    <input type="radio" name="genero" value="mujer"> Prefiero no decirlo
+                <div class="contenido"  id="genero">
+                    <div class="contenido">
+                        <input type="radio" name="genero" value="hombre">
+                        <label for="genero">Masculino</label>
+                    </div>
+
+                    <div id="contenido">
+                        <input type="radio" name="genero" value="mujer"> Femenino
+                        <label for="" class="contenido"></label>
+                    </div>
+                    <div id="contenido">
+                        <input type="radio" name="genero" value="mujer"> No binario
+                        <label for="" class="contenido"></label>
+                    </div>
+                    <div id="contenido">
+                        <input type="radio" name="genero" value="mujer"> Prefiero no decirlo
+                        <label for="" class="contenido"></label>
+                    </div>
                 </div>
               </div>
 
@@ -125,11 +138,11 @@
             <div class="lineaformulario">
                 <label for="comentarios">Comentarios</label>
                 <div>
-                    <textarea name="comentarios" cols="30" rows="10" placeholder="Intoduce tu contenido"></textarea>
+                    <textarea name="comentarios" cols="30" rows="10" placeholder="Intoduce tu contenido..."></textarea>
                 </div>
             </div>
 
-            <div class="button">
+            <div>
                 <button type="submit">Enviar</button>
             </div>
         </form>
