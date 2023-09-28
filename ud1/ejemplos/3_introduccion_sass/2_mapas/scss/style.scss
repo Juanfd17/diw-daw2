@@ -1,0 +1,18 @@
+$colores:(
+    'error': #FF0000,
+    'exito': #00FF00,
+    'info': #0000FF
+);
+
+@each $name, $color in $colores {
+    .#{$name}{
+        background-color: $color;
+        &:hover{
+            opacity: 50%;
+        }
+    }
+}
+
+button{
+    color: white;
+}

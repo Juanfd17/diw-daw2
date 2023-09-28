@@ -1,0 +1,24 @@
+.container {
+  display: flex;
+}
+
+.boton {
+  width: 10em;
+  height: 10em;
+}
+
+#caja1 {
+  background-color: #0028ff;
+}
+
+#caja2 {
+  background-color: #0050ff;
+}
+
+#caja3 {
+  background-color: #0078ff;
+}
+
+#caja4 {
+  background-color: #00a0ff;
+}

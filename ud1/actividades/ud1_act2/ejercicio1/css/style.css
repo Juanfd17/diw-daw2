@@ -1,0 +1,8 @@
+.contenedor {
+  display: flex;
+}
+
+@font-face {
+  font-family: "Sedgwick Ave Display";
+  src: url('font/cadena-sin-espacios("Sedgwick Ave Display")-Regular.ttf');
+}

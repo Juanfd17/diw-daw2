@@ -1,0 +1,18 @@
+$altura: 10em;
+$anchura: $altura;
+$color: rgb(0, 0, 255);
+
+.container{
+    display: flex;
+}
+
+.boton{
+    width: $anchura;
+    height: $altura;
+}
+
+@for $i from 1 through 4{
+    #caja#{$i}{
+        background-color:adjust-color($color, $green: +40*($i));
+    }
+}
