@@ -1,19 +1,56 @@
+@function cadena-sin-espacios($str) {
+  @while (str-index($str, ' ') != null) {
+    $index: str-index($str, ' ');
+    $str: "#{str-slice($str, 0, $index - 1)}#{str-slice($str, $index + 1)}";
+  }
+  @return $str;
+}
+
 .contenedor{
     display: flex;
 }
 
-$tipografia: 'Sedgwick Ave Display';
+$tipografia: cadena-sin-espacios("SedgwickAveDisplay-Regular");
 
 @font-face {
     font-family: $tipografia;
-    $tipografiaSinEspacios: cadena-sin-espacios($tipografia);
-    src: url("font/" + #{$tipografiaSinEspacios} + "-Regular.ttf");
+    src: url("font/" + $tipografia + ".ttf");
 }
 
-@function cadena-sin-espacios($str) {
-    @while (str-index($str, ' ') != null) {
-      $index: str-index($str, ' ');
-      $str: "#{str-slice($str, 0, $index - 1)}#{str-slice($str, $index + 1)}";
-    }
-    @return $str;
+body, input, textarea,select {
+    font-family: $tipografia;
+}
+
+$color1: rgb(235, 247, 230);
+$color2: rgb(233, 236, 243);
+$color3: rgb(248, 219, 201);
+$color4: rgb(255, 255, 155);
+$colorLetras: black;
+$cambio: 20;
+
+.contenedor{
+  .caja{
+    color: $colorLetras;
   }
+
+  .caja1{
+    background-color: $color1;
+    transform: translate($cambio + px, 0px);
+  }
+
+  .caja2{
+    background-color: $color2;
+    transform: rotate($cambio + deg);
+
+  }
+
+  .caja3{
+    background-color: $color3;
+    transform: translate($cambio + px, $cambio + px);
+  }
+
+  .caja4{
+    background-color: $color4;
+    transform: scale(2);
+  }
+}
