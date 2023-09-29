@@ -1,0 +1,38 @@
+#contenedor {
+  display: flex;
+  flex-direction: column;
+}
+#contenedor .caballo {
+  height: 100px;
+  width: 200px;
+}
+#contenedor .caballo1 {
+  background-color: rgb(246, 248, 207);
+  transition: width 13s linear;
+}
+#contenedor .caballo2 {
+  background-color: rgb(199, 228, 228);
+  transition: width 13s ease;
+}
+#contenedor .caballo3 {
+  background-color: rgb(202, 206, 254);
+  transition: width 13s ease-in;
+}
+#contenedor .caballo4 {
+  background-color: rgb(198, 247, 201);
+  transition: width 13s ease-out;
+}
+#contenedor .caballo5 {
+  background-color: rgb(250, 209, 200);
+  transition: width 13s ease-in-out;
+}
+#contenedor:hover .caballo {
+  width: 100vh;
+}
+
+img {
+  transform: scaleX(-1);
+  height: 100px;
+  width: 200px;
+  float: right;
+}

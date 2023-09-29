@@ -1,0 +1,53 @@
+$color1: rgb(246, 248, 207);
+$color2: rgb(199, 228, 228);
+$color3: rgb(202, 206, 254);
+$color4: rgb(198, 247, 201);
+$color5: rgb(250, 209, 200);
+
+#contenedor {
+    display: flex; // si usamos display:inline-flex el contenedor se ajusta al contenido y hay que poner el raton encima de la foto para que se vea el efecto
+    flex-direction: column;
+
+    .caballo {
+        height: 100px;
+        width: 200px;
+    }
+
+    .caballo1 {
+        background-color: $color1;
+        transition: width 13s linear;
+    }
+
+    .caballo2 {
+        background-color: $color2;
+        transition: width 13s ease;
+    }
+
+    .caballo3 {
+        background-color: $color3;
+        transition: width 13s ease-in;
+    }
+
+    .caballo4 {
+        background-color: $color4;
+        transition: width 13s ease-out ;
+    }
+
+    .caballo5 {
+        background-color: $color5;
+        transition: width 13s ease-in-out;
+
+    }
+
+    &:hover .caballo {
+        width: 100vh;
+    }
+
+}
+
+img {
+    transform: scaleX(-1);
+    height: 100px;
+    width: 200px;
+    float: right;
+}
