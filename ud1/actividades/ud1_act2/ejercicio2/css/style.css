@@ -12,23 +12,32 @@ body, input, textarea, select {
 
 .contenedor .caja {
   transition: transform 2s, background-color 2s;
+  margin: 10px;
 }
 .contenedor .caja {
   color: rgb(0, 0, 0);
 }
 .contenedor .caja1 {
   background-color: rgb(235, 247, 230);
-  transform: translate(20px, 0px);
 }
 .contenedor .caja2 {
   background-color: rgb(233, 236, 243);
-  transform: rotate(20deg);
 }
 .contenedor .caja3 {
   background-color: rgb(248, 219, 201);
-  transform: translate(20px, 20px);
 }
 .contenedor .caja4 {
   background-color: rgb(255, 255, 155);
+}
+.contenedor:hover .caja1 {
+  transform: translate(20px, 0px);
+}
+.contenedor:hover .caja2 {
+  transform: rotate(20deg);
+}
+.contenedor:hover .caja3 {
+  transform: translate(20px, 20px);
+}
+.contenedor:hover .caja4 {
   transform: scale(2);
 }

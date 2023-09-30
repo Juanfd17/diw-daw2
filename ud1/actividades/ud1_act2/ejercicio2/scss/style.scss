@@ -31,6 +31,7 @@ $cambio: 20;
 .contenedor{
     .caja{
         transition: transform 2s, background-color 2s;
+        margin: 10px;
     }
         
         .caja{
@@ -39,21 +40,35 @@ $cambio: 20;
 
     .caja1{
         background-color: $color1;
-        transform: translate($cambio + px, 0px);
     }
 
     .caja2{
         background-color: $color2;
-        transform: rotate($cambio + deg);
     }
 
     .caja3{
         background-color: $color3;
-        transform: translate($cambio + px, $cambio + px);
     }
 
     .caja4{
         background-color: $color4;
-        transform: scale(2);
+    }
+
+    &:hover{
+        .caja1{
+            transform: translate($cambio + px, 0px);
+        }
+    
+        .caja2{
+            transform: rotate($cambio + deg);
+        }
+    
+        .caja3{
+            transform: translate($cambio + px, $cambio + px);
+        }
+    
+        .caja4{
+            transform: scale(2);
+        }
     }
 }

@@ -11,7 +11,10 @@ body, input, textarea, select {
 }
 
 .contenedor .caja {
-  color: black;
+  margin: 10px;
+}
+.contenedor .caja {
+  color: rgb(0, 0, 0);
 }
 .contenedor .caja1 {
   background-color: rgb(235, 247, 230);
