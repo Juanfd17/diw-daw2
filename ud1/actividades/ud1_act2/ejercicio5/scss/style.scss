@@ -1,0 +1,36 @@
+.contenedor{
+    display: flex;
+}
+.punto{
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    margin: 15px;
+    background-color: rgb(85, 85, 84);
+    animation: scale 3s linear infinite;
+}
+
+.punto1 {
+    animation-delay: 0s; /* Sin retraso para el primer elemento */
+  }
+
+  .punto2 {
+    animation-delay: 1s; /* 1 segundo de retraso para el segundo elemento */
+  }
+  
+.punto3 {
+    animation-delay: 2s; /* 2 segundos de retraso para el tercer elemento */
+  }
+
+@keyframes scale {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+      }
+  }
