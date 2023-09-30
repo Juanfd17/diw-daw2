@@ -1,0 +1,27 @@
+.contenedor {
+  display: flex;
+  justify-content: space-around;
+  background-color: rgb(207, 211, 248);
+}
+
+#spinner {
+  border: 5px solid;
+  border-color: rgb(255, 255, 255) rgb(138, 140, 233) rgb(138, 140, 233) rgb(138, 140, 233);
+  width: 40px;
+  height: 40px;
+  border-radius: 80px;
+  animation: rotate 3s linear infinite;
+}
+
+#svg-spinner {
+  animation: rotate 3s linear infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
