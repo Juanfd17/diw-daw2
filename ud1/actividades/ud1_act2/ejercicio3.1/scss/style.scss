@@ -11,6 +11,10 @@ $color5: rgb(250, 209, 200);
     .caballo {
         height: 100px;
         width: 200px;
+        background-image: url("./img/caballo.gif");
+        background-repeat: no-repeat;
+        background-size: 200px 100px;
+        transform: scaleX(-1);
     }
 
     .caballo1 {
