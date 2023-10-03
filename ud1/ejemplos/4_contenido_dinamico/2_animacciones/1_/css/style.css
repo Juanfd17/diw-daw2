@@ -1,0 +1,19 @@
+@keyframes calienta {
+  0% {
+    background-color: blue;
+  }
+  50% {
+    background-color: red;
+  }
+  to {
+    background-color: blue;
+  }
+}
+.paisaje {
+  width: 200px;
+  height: 200px;
+  background-color: blue;
+}
+.paisaje:hover {
+  animation: calienta 5s infinite linear;
+}

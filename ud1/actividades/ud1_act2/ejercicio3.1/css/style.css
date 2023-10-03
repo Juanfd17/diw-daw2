@@ -33,10 +33,3 @@
 #contenedor:hover .caballo {
   width: 100vw;
 }
-
-img {
-  transform: scaleX(-1);
-  height: 100px;
-  width: 200px;
-  float: right;
-}

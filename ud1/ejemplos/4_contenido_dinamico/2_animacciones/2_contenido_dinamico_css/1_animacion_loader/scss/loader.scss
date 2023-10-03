@@ -1,0 +1,27 @@
+@use "sass:math";
+
+
+$tam-base:30px;
+$color:#374572;
+
+
+#loader{
+    margin:3*$tam-base;;
+    width:$tam-base;
+    height:$tam-base;
+    border:math.div($tam-base,3) solid $color;
+    border-radius:50%;
+    border-right:0 none;
+    box-shadow: 0 0 $tam-base 2px $color;
+   // animation: gira 1s infinite;
+    animation: gira 1s infinite linear;
+
+}
+    
+
+@keyframes gira{
+    from{ transform:rotate(0deg); opacity:0.5;}
+    50%{ transform:rotate(180deg); opacity:1;}
+    to{ transform:rotate(360deg); opacity:0.5;}
+
+}

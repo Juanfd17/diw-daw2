@@ -1,0 +1,19 @@
+$anchura:82px;
+$altura:116px;
+
+$numero-sprites:10;
+
+#monstruo{
+    width:$anchura;
+    height:$altura;
+    margin:$anchura;
+    background-image: url(img/monstruo.png);
+    background-repeat: no-repeat;
+    animation:mueve-monstruo .8s steps($numero-sprites) infinite;
+
+}
+
+@keyframes mueve-monstruo{
+    from{background-position:0 0;}
+    to{background-position:-1*$anchura*$numero-sprites 0;}
+}
