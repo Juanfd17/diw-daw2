@@ -1,0 +1,22 @@
+@import "reset";
+$color-logo: rgb(120, 165, 216);
+$color-fondo: rgb(172, 164, 164);
+
+ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    background-color: $color-logo;
+}
+
+.elemento{
+    background-color: $color-fondo;
+}
+
+
+.icono{
+    color: green;
+    font-size: 3em;
+}

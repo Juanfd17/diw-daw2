@@ -1,0 +1,21 @@
+@import url(reset.css);
+@font-face {
+  font-family: "Roboto-Regular";
+  src: url("font/Roboto-Regular.ttf");
+}
+.container {
+  background-color: rgb(128, 128, 128);
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid black;
+  width: 50%;
+}
+
+.contenido {
+  background-color: rgb(208, 191, 191);
+  color: white;
+  font-family: "Roboto-Regular";
+  border: 2px solid black;
+  margin: 14px;
+  padding: 0px 20px;
+}

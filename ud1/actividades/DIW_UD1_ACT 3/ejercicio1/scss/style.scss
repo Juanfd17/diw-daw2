@@ -1,0 +1,24 @@
+@import url(reset.css);
+$tipografia: "Roboto-Regular";
+
+@font-face {
+  font-family: $tipografia;
+  src: url("font/" + $tipografia + ".ttf");
+}
+
+.container{
+    background-color: rgb(128, 128, 128);
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid black;
+    width: 50%;
+}
+
+.contenido{
+    background-color: rgb(208, 191, 191);
+    color: white;
+    font-family: $tipografia;
+    border: 2px solid black;
+    margin: 14px;
+    padding: 0px 20px;
+}
