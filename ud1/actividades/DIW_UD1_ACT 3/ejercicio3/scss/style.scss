@@ -1,0 +1,26 @@
+$tipografia: "Montserrat-Regular";
+
+@font-face {
+  font-family: $tipografia;
+  src: url("font/" + $tipografia + ".ttf");
+}
+
+.titulo{
+    text-align: center;
+    font-weight: bold;
+    font-family: $tipografia;
+}
+
+#tarjetas{
+    display: flex;
+    justify-content: space-around;
+}
+
+.tarjeta{
+    text-align: center;
+    border: 1px solid black;
+}
+
+.fa-brands{
+    font-size: 3em;
+}

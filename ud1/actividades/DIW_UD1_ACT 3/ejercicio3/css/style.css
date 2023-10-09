@@ -1,0 +1,23 @@
+@font-face {
+  font-family: "Montserrat-Regular";
+  src: url("font/Montserrat-Regular.ttf");
+}
+.titulo {
+  text-align: center;
+  font-weight: bold;
+  font-family: "Montserrat-Regular";
+}
+
+#tarjetas {
+  display: flex;
+  justify-content: space-around;
+}
+
+.tarjeta {
+  text-align: center;
+  border: 1px solid black;
+}
+
+.fa-brands {
+  font-size: 3em;
+}

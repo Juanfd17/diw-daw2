@@ -1,22 +1,49 @@
 @import "reset";
 $color-logo: rgb(120, 165, 216);
 $color-fondo: rgb(172, 164, 164);
+$color-hover: rgb(161, 206, 90);
+$color-texto: rgb(240, 248, 255);
 
-ul{
-    display: flex;
-    justify-content: space-between;
+$tipografia: "Ubuntu-Regular";
+
+@font-face {
+  font-family: $tipografia;
+  src: url("font/" + $tipografia + ".ttf");
 }
 
-.logo{
-    background-color: $color-logo;
-}
 
-.elemento{
+nav{
     background-color: $color-fondo;
 }
 
+ul{
+    display: flex;
+    justify-content: left;
+}
+
+#logo{
+    background-color: $color-logo;
+    font-size: 2em;
+
+    &:hover{
+        color: black;
+    }
+}
+
+.elemento{
+    display: flex;
+    align-items: center;
+    font-size: 1.5em;
+    padding: 1em;
+    color: $color-texto;
+    font-family: $tipografia;
+    transition: all 0.5s;
+
+    &:hover{
+        background-color: $color-hover;
+    }
+}
 
 .icono{
     color: green;
-    font-size: 3em;
 }

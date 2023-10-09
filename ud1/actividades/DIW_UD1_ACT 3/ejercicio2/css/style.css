@@ -491,20 +491,40 @@ template {
   display: none;
 }
 
-ul {
-  display: flex;
-  justify-content: space-between;
+@font-face {
+  font-family: "Ubuntu-Regular";
+  src: url("font/Ubuntu-Regular.ttf");
+}
+nav {
+  background-color: rgb(172, 164, 164);
 }
 
-.logo {
+ul {
+  display: flex;
+  justify-content: left;
+}
+
+#logo {
   background-color: rgb(120, 165, 216);
+  font-size: 2em;
+}
+#logo:hover {
+  color: black;
 }
 
 .elemento {
-  background-color: rgb(172, 164, 164);
+  display: flex;
+  align-items: center;
+  font-size: 1.5em;
+  padding: 1em;
+  color: rgb(240, 248, 255);
+  font-family: "Ubuntu-Regular";
+  transition: all 0.5s;
+}
+.elemento:hover {
+  background-color: rgb(161, 206, 90);
 }
 
 .icono {
   color: green;
-  font-size: 3em;
 }
