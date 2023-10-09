@@ -1,0 +1,29 @@
+$redes: "facebook", "twitter", "you_tube", "instagram";
+
+#contenedor{
+    border: 2px solid black;
+    background-color: gray;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+@for $i from 1 through length($redes){
+    $red: nth($redes, $i);
+    ##{$red}{
+        background-image: url("img/sprite.png");
+        $posicion: (100 * $i) + (5 * ($i - 1));
+        background-position: right #{$posicion}px top 0px;
+
+        &:hover{
+            background-position: right #{$posicion}px top 100px;
+
+        }
+    }
+}
+
+.icono{
+    width: 100px;
+    height: 100px;
+}

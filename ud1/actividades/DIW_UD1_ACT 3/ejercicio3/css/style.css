@@ -5,19 +5,67 @@
 .titulo {
   text-align: center;
   font-weight: bold;
-  font-family: "Montserrat-Regular";
 }
 
 #tarjetas {
+  font-family: "Montserrat-Regular";
   display: flex;
   justify-content: space-around;
+  gap: 10px;
 }
 
 .tarjeta {
   text-align: center;
   border: 1px solid black;
+  border-radius: 5px;
+  transition: all 0.3s;
+}
+.tarjeta:hover {
+  color: white;
 }
 
 .fa-brands {
   font-size: 3em;
+}
+
+.texto {
+  text-align: left;
+  margin: 10px;
+}
+
+.botonFuera {
+  display: flex;
+  justify-content: center;
+}
+
+.boton {
+  padding: 0.6em;
+  border-radius: 20px;
+  background-color: black;
+  color: white;
+  transition: all 0.3s;
+}
+.boton:hover {
+  border-radius: 5px;
+}
+
+#twitter:hover {
+  background-color: rgb(29, 161, 242);
+}
+#twitter:hover .boton {
+  color: rgb(29, 161, 242);
+}
+
+#instagram:hover {
+  background-color: rgb(225, 48, 108);
+}
+#instagram:hover .boton {
+  color: rgb(225, 48, 108);
+}
+
+#youtube:hover {
+  background-color: rgb(255, 0, 0);
+}
+#youtube:hover .boton {
+  color: rgb(255, 0, 0);
 }

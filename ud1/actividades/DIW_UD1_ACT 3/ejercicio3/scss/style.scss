@@ -1,26 +1,89 @@
+$colorTwitter: rgb(29, 161, 242);
+$colorInstagram: rgb(225, 48, 108);
+$colorYoutube: rgb(255, 0, 0);
+$tiempoAnimacion: 0.3s;
 $tipografia: "Montserrat-Regular";
 
 @font-face {
-  font-family: $tipografia;
-  src: url("font/" + $tipografia + ".ttf");
+    font-family: $tipografia;
+    src: url("font/" + $tipografia + ".ttf");
 }
 
 .titulo{
     text-align: center;
     font-weight: bold;
-    font-family: $tipografia;
 }
 
 #tarjetas{
+    font-family: $tipografia;
     display: flex;
     justify-content: space-around;
+    gap: 10px;
 }
 
 .tarjeta{
     text-align: center;
     border: 1px solid black;
+    border-radius: 5px;
+    transition: all $tiempoAnimacion;
+
+    &:hover{
+        color: white;
+    }
 }
 
 .fa-brands{
     font-size: 3em;
+}
+
+.texto{
+    text-align: left;
+    margin: 10px;
+}
+
+.botonFuera{
+    display: flex;
+    justify-content: center;
+}
+
+.boton{
+    padding: 0.6em;
+    border-radius: 20px;
+    background-color: black;
+    color: white;
+    transition: all $tiempoAnimacion;
+
+    &:hover{
+        border-radius: 5px;
+    }
+}
+
+#twitter{
+    &:hover{
+        background-color: $colorTwitter;
+    }
+
+    &:hover .boton{
+        color: $colorTwitter;
+    }
+}
+
+#instagram{
+    &:hover{
+        background-color: $colorInstagram;
+    }
+
+    &:hover .boton{
+        color: $colorInstagram;
+    }
+}
+
+#youtube{
+    &:hover{
+        background-color: $colorYoutube;
+    }
+
+    &:hover .boton{
+        color: $colorYoutube;
+    }
 }
