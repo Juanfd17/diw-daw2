@@ -1,0 +1,72 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+
+
+header,
+nav,
+article,
+aside,
+footer {
+    padding: 1em;
+}
+
+#contenedor {}
+
+header {
+    background-color: #e0e0e0;
+}
+
+nav {
+    background-color: #84b2e0b2;
+
+    ul {
+        list-style-type: none;
+        padding-left: 0;
+
+        li {
+            background-color: #929ed3af;
+            padding: 1em;
+        }
+    }
+}
+
+main {}
+
+.articulo1 {
+    background-color: rgba(255, 217, 0, 0.568);
+}
+
+.articulo2 {
+
+    .imagenes {
+
+        img {
+
+        }
+
+        .corto {}
+
+        .largo {}
+
+    }
+}
+
+
+.contenido {
+    div {
+        padding: 1em;
+        background-color: #86864c;
+        color: #f3f3f3;
+    }
+}
+
+aside {
+    background-color: rgba(255, 217, 0, 0.568);
+    align-self: stretch;
+}
+
+footer {
+    background-color: rgba(196, 169, 221, 0.438);
+}

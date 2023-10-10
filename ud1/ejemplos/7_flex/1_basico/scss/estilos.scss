@@ -1,0 +1,42 @@
+@import "reset";
+
+
+#contenedor{
+    padding:2em;
+    margin:e2m;
+    background-color:rgba(212, 209, 157, 0.842);
+    padding:1em;
+    font-family:"Concert One";
+    display: flex;
+    height: 100vh;
+}
+
+header{
+    font-size:2em;
+    padding:1em;  
+    background-color:rgba(102, 133, 90, 0.6);
+    color:white;
+}
+
+main{
+    display: flex;
+    height: 100%;
+    padding:1em;    
+    flex-wrap: wrap;
+
+    .interna{
+        font-weight: bold;      
+        padding:1em;
+    }
+    .verde{
+        color:rgba(75, 102, 75, 0.8);
+        border:1px solid rgba(75, 102, 75, 0.8);
+        background-color:rgba(0,255,0,0.2);    
+    }
+
+    .azul{
+        background-color:rgba(0,0,255,0.2);
+        color:rgba(58, 58, 92, 0.7);
+        border:1px solid rgba(58, 58, 92, 0.7);
+    }
+}
