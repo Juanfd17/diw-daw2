@@ -20,9 +20,9 @@ main{
     display: flex;
     padding:1em;  
     .interna{
-        flex-grow: 1;
         font-weight: bold;      
-        padding:1em;     
+        padding:1em;    
+        flex-grow: 1; 
     }
     .verde{
         color:rgba(75, 102, 75, 0.8);
@@ -35,8 +35,21 @@ main{
         color:rgba(58, 58, 92, 0.7); 
         border:1px solid rgba(58, 58, 92, 0.7);
     }
+
+    #div1{
+        flex-grow: 2;
+    }
 }
 
-#div1{
-    flex-grow: 6;
+footer{
+    display: flex;
+    justify-content: space-between;
+
+    #robot1{
+        flex-basis: 50%;
+    }
+
+    img{
+        width: 100%;
+    }
 }

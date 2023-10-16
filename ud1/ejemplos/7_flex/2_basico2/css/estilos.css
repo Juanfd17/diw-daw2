@@ -511,9 +511,9 @@ main {
   padding: 1em;
 }
 main .interna {
-  flex-grow: 1;
   font-weight: bold;
   padding: 1em;
+  flex-grow: 1;
 }
 main .verde {
   color: rgba(75, 102, 75, 0.8);
@@ -525,7 +525,17 @@ main .azul {
   color: rgba(58, 58, 92, 0.7);
   border: 1px solid rgba(58, 58, 92, 0.7);
 }
+main #div1 {
+  flex-grow: 2;
+}
 
-#div1 {
-  flex-grow: 6;
+footer {
+  display: flex;
+  justify-content: space-between;
+}
+footer #robot1 {
+  flex-basis: 50%;
+}
+footer img {
+  width: 100%;
 }

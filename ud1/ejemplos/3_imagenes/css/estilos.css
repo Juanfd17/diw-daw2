@@ -497,20 +497,12 @@ body {
 
 #contenedor {
   padding: 2em;
-  display: flex;
-  gap: 3em;
-  justify-content: center;
-  flex-wrap: wrap;
 }
 #contenedor img {
   border-radius: 50%;
   box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
   transition: all 0.5s;
-  width: 100%;
 }
 #contenedor img:hover {
   transform: scale(1.05);
-}
-#contenedor div {
-  flex-basis: 20%;
 }
