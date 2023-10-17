@@ -1,12 +1,9 @@
-@use "sass:math";
-//Variables
-$tamanio_base: 1em;
-
 * {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
 }
 
+#contenedor {}
 
 header,
 nav,
@@ -14,12 +11,7 @@ article,
 aside,
 footer {
     padding: 1em;
-}
-
-#contenedor {
-    display: flex;
-    flex-direction: column;
-    row-gap: $tamanio_base;
+    margin: 1em;
 }
 
 header {
@@ -28,10 +20,10 @@ header {
 
 nav {
     background-color: #84b2e0b2;
-
     ul {
         display: flex;
-        gap: $tamanio_base;
+        gap: 1em;
+        justify-content: space-between;
         list-style-type: none;
         padding-left: 0;
 
@@ -49,54 +41,54 @@ main {
 
 .articulo1 {
     background-color: rgba(255, 217, 0, 0.568);
-    flex-basis: 15%;
+    flex-basis: 20%;
     display: flex;
     flex-direction: column;
+    align-self: stretch;
 }
 
 .articulo2 {
-    flex-basis: 70%;
-
+    flex-basis: 60%;
     .imagenes {
         display: flex;
         flex-wrap: wrap;
-        row-gap: $tamanio_base;
+        gap: 1em;
+        justify-content: center;
         img {
-            width: calc(100% - $tamanio_base);
-            height: 50vh;
-            object-fit: cover;
+            height: 500px;
+            width: 100%;
         }
-
+        
         .corto {
             flex-basis: 30%;
         }
 
         .largo {
-            flex-basis: 70%;
+            flex-grow: 70%;
         }
-
     }
 }
-
 
 .contenido {
     display: flex;
     flex-direction: column;
+    align-self: stretch;
     height: 100%;
-    gap: $tamanio_base;
     div {
+        height: 100%;
+        margin-bottom: 1em;
+        padding: 1em;
         background-color: #86864c;
         color: #f3f3f3;
-        flex-grow: 1;
-        padding-top: $tamanio_base;
     }
 }
 
 aside {
+    flex-basis: 20%;
     background-color: rgba(255, 217, 0, 0.568);
     display: flex;
     flex-direction: column;
-    flex-basis: 15%;
+    align-self: stretch;
 }
 
 footer {
