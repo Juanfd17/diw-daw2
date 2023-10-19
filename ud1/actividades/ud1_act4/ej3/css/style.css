@@ -495,7 +495,7 @@ template {
   font-family: "mesmerize-bd";
   src: url("font/mesmerize-bd.ttf");
 }
-body, input, textarea, select, p {
+h1, h2, h3, p, a {
   font-family: "mesmerize-bd";
 }
 
@@ -503,39 +503,108 @@ body {
   background-color: rgb(149, 140, 135);
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
+}
+
+header {
+  flex-basis: 100%;
+  background-color: rgb(68, 63, 57);
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+header h1 {
+  font-size: 3em;
+}
+header h2 {
+  padding: 1em;
+}
+header nav {
+  flex-grow: 1;
+  background-color: white;
+}
+header nav li {
+  display: flex;
+}
+header nav li ul {
+  flex-grow: 1;
+  color: black;
+  padding: 1em;
+  transition: all 0.5s;
+}
+header nav li ul:hover {
+  background: rgb(255, 224, 1);
+  color: white;
+}
+header .imgFondo {
+  padding: 5em;
+  background-image: url("https://fragmentos.megustaleer.com/MES-122906/images/bg005_01.jpg");
+  background-size: 100%;
+}
+header .imgFondo h2 {
+  background-color: rgba(201, 201, 201, 0.511);
+  padding: 1em;
+  font-size: 2em;
 }
 
 #container {
+  padding: 1em;
   flex-basis: 90%;
   background-color: white;
   display: flex;
   justify-content: center;
-  padding: 1em;
+  flex-wrap: wrap;
+  gap: 1em;
 }
-#container article {
+#container .tituloSeccion {
+  background-color: rgb(255, 224, 1);
+  flex-basis: 95%;
+  text-align: center;
+  padding: 1em;
+  color: white;
+}
+#container .comics {
+  flex-basis: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap;
+  gap: 1em;
+}
+#container .comics article {
   flex-basis: 20%;
   box-shadow: 0px 0px 20px black;
   display: flex;
   flex-direction: column;
 }
-#container article .imagen {
+#container .comics article .imagen {
   height: 100%;
 }
-#container article .imagen img {
+#container .comics article .imagen img {
   width: 100%;
   height: 100%;
 }
-#container article .nombre {
+#container .comics article .nombre {
   background-color: rgb(179, 211, 234);
   text-align: center;
   padding: 1em;
 }
-#container article .texto {
-  text-align: justify;
-  padding: 1em;
-}
-#container article .subtitulo {
+#container .comics article .subtitulo {
   padding: 1em;
   background-color: rgb(233, 232, 230);
   text-align: center;
+  font-size: 0.8em;
+}
+
+footer {
+  background-color: rgb(68, 63, 57);
+  flex-basis: 100%;
+  padding: 1em;
+  display: flex;
+  justify-content: space-between;
+}
+footer div {
+  color: white;
 }

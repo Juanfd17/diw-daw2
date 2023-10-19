@@ -492,11 +492,11 @@ template {
 }
 
 @font-face {
-  font-family: "PatuaOne-Regular";
-  src: url("font/PatuaOne-Regular.ttf");
+  font-family: "mesmerize-bd";
+  src: url("font/mesmerize-bd.ttf");
 }
 h1, h3, p {
-  font-family: "PatuaOne-Regular";
+  font-family: "mesmerize-bd";
 }
 
 body {
@@ -523,8 +523,7 @@ header h1 {
   background-color: white;
   display: flex;
   justify-content: center;
-  align-items: center;
-  align-self: stretch;
+  align-items: stretch;
   flex-wrap: wrap;
   gap: 1em;
 }
@@ -534,10 +533,12 @@ header h1 {
   display: flex;
   flex-direction: column;
 }
+#container article .imagen {
+  height: 100%;
+}
 #container article .imagen img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
 }
 #container article .nombre {
   background-color: rgb(179, 211, 234);
@@ -548,4 +549,13 @@ header h1 {
   padding: 1em;
   background-color: rgb(233, 232, 230);
   text-align: center;
+  font-size: 0.7em;
+}
+
+footer {
+  background-color: rgb(68, 63, 57);
+  flex-basis: 100%;
+  padding: 1em;
+  text-align: center;
+  color: white;
 }

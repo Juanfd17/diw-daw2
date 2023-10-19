@@ -1,0 +1,136 @@
+@import "reset";
+$tam-base: 1em;
+
+$tipografia: "mesmerize-bd";
+
+@font-face {
+  font-family: $tipografia;
+  src: url("font/" + $tipografia + ".ttf");
+}
+
+h1, h2, h3, p, a{
+    font-family: $tipografia;
+}
+
+body{
+    background-color: rgb(149, 140, 135);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+header{
+    flex-basis: 100%;
+    background-color: rgb(68, 63, 57);
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+
+    h1{
+        font-size: $tam-base * 3;
+    }
+
+    h2{
+        padding: $tam-base;;
+    }
+
+    nav{
+        flex-grow: 1;
+        background-color: white;
+        li{
+            display: flex;
+
+            ul{
+                flex-grow: 1;
+                color: black;
+                padding: $tam-base;
+                transition: all 0.5s;
+
+                &:hover{
+                    background: rgb(255, 224, 1);
+                    color: white;
+                }
+            }
+        }
+    }
+
+    .imgFondo{
+        padding: $tam-base * 5;
+        background-image: url("https://fragmentos.megustaleer.com/MES-122906/images/bg005_01.jpg");
+        background-size: 100%;
+    
+        h2{
+            background-color: rgba(201, 201, 201, 0.511);
+            padding: $tam-base;
+            font-size: $tam-base * 2;
+        }
+    }
+}
+
+#container{
+    padding: $tam-base;
+    flex-basis: 90%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: $tam-base;
+
+    .tituloSeccion{
+        background-color: rgb(255, 224, 1);
+        flex-basis: 95%;
+        text-align: center;
+        padding: $tam-base;
+        color: white;
+    }
+
+    .comics{
+        flex-basis: 100%;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: stretch;
+        flex-wrap: wrap;
+        gap: $tam-base;
+
+        article{
+            flex-basis: 20%;
+            box-shadow: -0px 0px 20px black;
+            display: flex;
+            flex-direction: column;
+            .imagen{
+                height: 100%;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+    
+            .nombre{
+                background-color: rgb(179, 211, 234);
+                text-align: center;
+                padding: $tam-base;
+            }
+    
+            .subtitulo{
+                padding: 1em;
+                background-color: rgb(233, 232, 230);
+                text-align: center;
+                font-size: $tam-base * 0.8;
+            }
+        }
+    }
+}
+
+footer{
+    background-color: rgb(68, 63, 57);
+    flex-basis: 100%;
+    padding: $tam-base;
+    display: flex;
+    justify-content: space-between;
+
+    div{
+        color: white;
+    }
+}
