@@ -499,6 +499,10 @@ h1, h2, h3, p, a {
   font-family: "mesmerize-bd";
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: rgb(149, 140, 135);
   display: flex;
@@ -543,7 +547,9 @@ header .imgFondo {
   background-size: 100%;
 }
 header .imgFondo h2 {
-  background-color: rgba(201, 201, 201, 0.511);
+  -webkit-text-stroke: 1px rgb(0, 0, 0);
+  color: rgb(94, 94, 94);
+  background-color: rgba(201, 201, 201, 0.363);
   padding: 1em;
   font-size: 2em;
 }
@@ -562,7 +568,7 @@ header .imgFondo h2 {
   flex-basis: 95%;
   text-align: center;
   padding: 1em;
-  color: white;
+  color: rgb(179, 179, 179);
 }
 #container .comics {
   flex-basis: 100%;
