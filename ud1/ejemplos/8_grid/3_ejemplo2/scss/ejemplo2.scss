@@ -1,0 +1,60 @@
+@import "reset";
+$tam-base:1rem;
+
+*{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+    padding:0 2*$tam-base;
+    background-color:lightgray;
+}
+
+#contenedor div{
+    padding:2em;
+    text-align: center;
+}
+
+
+#cabecera {
+    background-color:papayawhip;
+  
+  }
+  
+  #rojo {
+    background-color: #f5b19e;
+   
+  }
+  
+ #azul{
+    background-color: lightskyblue;
+    
+  }
+  
+ #morado{
+    background-color: pink;
+  }
+  
+#marron {
+    background-color:sienna; 
+    
+  }
+  
+#verde {
+    background-color:olivedrab;
+  }
+  
+ #negro{
+    background-color:black;
+    color:#f8f8f8;
+  }
+  
+ #amarillo {
+    background-color:gold;
+   
+  }
+
+  #naranja {
+    background-color: orange;
+  }
+

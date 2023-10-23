@@ -1,0 +1,48 @@
+@import "reset";
+$tam-base:1rem;
+
+*{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+    padding:0 2*$tam-base;
+    background-color:lightgray;
+}
+
+#contenedor{
+    padding: 1em;
+    display: grid;
+    gap: 1em;
+    grid-template-columns: repeat(4, 1fr);
+}
+#contenedor div{
+    padding:2em;
+    text-align: center;
+}
+
+#cabecera{
+    background-color:khaki; 
+    grid-column: 1/-1;
+}
+
+#menu{
+    background-color: lightblue;
+    grid-column: 1/2;
+    grid-row: 2/4;
+
+}
+
+#contenido1, #contenido2, #contenido3{
+    background-color: lightcoral;
+    grid-column: 2/-1;
+}
+
+#contenido3{
+    grid-column: 1/-1;
+}
+
+#pie{
+    background-color: lightgreen;
+    grid-column: 1/-1;
+}
