@@ -1,0 +1,78 @@
+@use "sass:color";
+@use "sass:math";
+
+
+@import "reset";
+@import "variables.scss";
+@import "header.scss";
+@import "main.scss";
+
+/* Importación de código de secciones */
+
+
+/* Estilos generales */
+
+*{
+    font-family: $tipografia;
+    font-weight: 100;
+   /* Ajusta font-weight de acuerdo a la captura mostrada */
+}
+
+body{
+    background-color: $fondo_oscuro;
+}
+
+#contenedor{
+    padding: 0em $tam-base * 5;
+    color: $blanco;
+}
+
+img{
+    /* Proporciona los estilos para las imágenes */
+}
+
+.rosa{
+    background-color: $rosa;
+}
+
+.azulado{
+    background-color: $verdoso;
+}
+
+.naranja{
+    background-color: $anaranjado;
+}
+
+.naranja{
+    background-color: $anaranjado;
+}
+
+.azulin{
+    background-color: $azul_claro;
+}
+
+
+
+#contacto{
+    background-color: $azul_oscuro;
+    padding: $tam-base;
+    
+    h3{
+            font-size: 2*$tam-base;
+            text-align: center;
+    }
+
+    .campoformulario{
+        input, textarea{
+            font-family: $tipografia;
+            padding: math.div($tam-base,10);
+        }
+    }
+
+}
+
+
+footer{
+    background-color: $azul_oscuro;
+    padding: $tam-base;
+}
