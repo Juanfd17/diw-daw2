@@ -1,13 +1,14 @@
 @use "sass:color";
 @use "sass:math";
 
-
+/* Importación de código de secciones */
 @import "reset";
 @import "variables.scss";
 @import "header.scss";
-@import "main.scss";
-
-/* Importación de código de secciones */
+@import "principal.scss";
+@import "aside.scss";
+@import "contacto.scss";
+@import "footer.scss";
 
 
 /* Estilos generales */
@@ -27,8 +28,11 @@ body{
     color: $blanco;
 }
 
-img{
-    /* Proporciona los estilos para las imágenes */
+main{
+    padding: $tam-base * 2 0px;
+    display: grid;
+    gap: $tam-base * 2;
+    grid-template-columns:1fr 3fr 1fr;
 }
 
 .rosa{
@@ -49,30 +53,4 @@ img{
 
 .azulin{
     background-color: $azul_claro;
-}
-
-
-
-#contacto{
-    background-color: $azul_oscuro;
-    padding: $tam-base;
-    
-    h3{
-            font-size: 2*$tam-base;
-            text-align: center;
-    }
-
-    .campoformulario{
-        input, textarea{
-            font-family: $tipografia;
-            padding: math.div($tam-base,10);
-        }
-    }
-
-}
-
-
-footer{
-    background-color: $azul_oscuro;
-    padding: $tam-base;
 }

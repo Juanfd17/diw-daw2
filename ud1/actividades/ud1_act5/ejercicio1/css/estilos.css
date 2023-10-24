@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/* Importación de código de secciones */
 /* Custom resets */
 /* Box-sizing */
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,100");
@@ -550,79 +551,117 @@ header #social i {
   color: rgb(80, 101, 130);
 }
 
-main {
-  padding: 2rem 0px;
-}
-main #principal {
+#principal {
+  grid-column: span 3;
   display: grid;
   grid-auto-flow: column;
   grid-template-columns: 4fr 1fr;
   gap: 2rem;
 }
-main #principal #novedades article {
+#principal #novedades article {
   display: grid;
   grid-auto-flow: column;
   grid-template-columns: repeat(2, 1fr);
 }
-main #principal #novedades article .imgArticle {
+#principal #novedades article .imgArticle {
   object-fit: cover;
 }
-main #principal #novedades article .imgArticle img {
+#principal #novedades article .imgArticle img {
   height: 100%;
   width: 100%;
 }
-main #principal #novedades article .contenido {
+#principal #novedades article .contenido {
   padding: 1rem;
   display: grid;
 }
-main #principal #novedades article .contenido h4 {
+#principal #novedades article .contenido h4 {
   font-size: 2rem;
   text-align: end;
 }
-main #principal #novedades article .contenido h3 {
+#principal #novedades article .contenido h3 {
   font-size: 3rem;
 }
-main #principal #novedades article .contenido div {
+#principal #novedades article .contenido div {
   line-height: 1.5;
 }
-main #principal #novedades article:nth-child(odd) .imgArticle {
+#principal #novedades article:nth-child(odd) .imgArticle {
   order: 0; /* Las priopiedades order van a tener efecto si el contenedor es grid o flex */
 }
-main #principal #novedades article:nth-child(odd) .contenido {
+#principal #novedades article:nth-child(odd) .contenido {
   order: 1;
 }
-main #principal #novedades article:nth-child(even) .imgArticle {
+#principal #novedades article:nth-child(even) .imgArticle {
   order: 1;
 }
-main #principal #novedades article:nth-child(even) .contenido {
+#principal #novedades article:nth-child(even) .contenido {
   order: 0;
 }
-main #principal #novedades article:last-child .contenido {
+#principal #novedades article:last-child .contenido {
   grid-column: span 2;
 }
-main #principal aside {
+
+aside {
+  display: grid;
+  grid-template-rows: auto auto 1fr;
   background-color: rgb(245, 236, 236);
 }
-main #principal aside article {
+aside article {
   background-color: rgb(245, 236, 236);
   color: rgb(128, 128, 128);
 }
-main #principal aside article .espaciado {
+aside article .imgArticle {
+  object-fit: cover;
+}
+aside article .imgArticle img {
+  height: 100%;
+  width: 100%;
+}
+aside article .espaciado {
   padding: 1rem;
 }
-main #principal aside article .espaciado h4 {
+aside article .espaciado h4 {
   font-size: 2rem;
 }
-main #principal aside article .espaciado div {
+aside article .espaciado div {
   /* Define el espaciado entre líneas */
 }
-main #principal aside #banner {
+aside #banner {
   background-image: url("./img/banner.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-/* Importación de código de secciones */
+#contacto {
+  grid-column: 2;
+  background-color: rgb(18, 32, 61);
+  padding: 1rem;
+  display: grid;
+  gap: 1rem;
+}
+#contacto h3 {
+  font-size: 2rem;
+  text-align: center;
+  padding: 1rem;
+}
+#contacto .campoformulario {
+  display: grid;
+  gap: 1rem;
+  grid-auto-flow: column;
+  grid-template-columns: 1fr 5fr;
+}
+#contacto .campoformulario input, #contacto .campoformulario textarea {
+  font-family: "Roboto";
+  padding: 0.1rem;
+}
+
+footer {
+  background-color: rgb(18, 32, 61);
+  padding: 1rem;
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: space-between;
+}
+
 /* Estilos generales */
 * {
   font-family: "Roboto";
@@ -639,8 +678,11 @@ body {
   color: rgb(245, 236, 236);
 }
 
-img {
-  /* Proporciona los estilos para las imágenes */
+main {
+  padding: 2rem 0px;
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 1fr 3fr 1fr;
 }
 
 .rosa {
@@ -661,22 +703,4 @@ img {
 
 .azulin {
   background-color: rgb(38, 131, 174);
-}
-
-#contacto {
-  background-color: rgb(18, 32, 61);
-  padding: 1rem;
-}
-#contacto h3 {
-  font-size: 2rem;
-  text-align: center;
-}
-#contacto .campoformulario input, #contacto .campoformulario textarea {
-  font-family: "Roboto";
-  padding: 0.1rem;
-}
-
-footer {
-  background-color: rgb(18, 32, 61);
-  padding: 1rem;
 }

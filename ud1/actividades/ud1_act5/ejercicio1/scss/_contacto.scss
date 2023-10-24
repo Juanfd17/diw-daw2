@@ -1,0 +1,25 @@
+#contacto{
+    grid-column: 2;
+    background-color: $azul_oscuro;
+    padding: $tam-base;
+    display: grid;
+    gap: $tam-base;
+    
+    h3{
+            font-size: 2*$tam-base;
+            text-align: center;
+            padding: $tam-base;
+    }
+
+    .campoformulario{
+        display: grid;
+        gap: $tam-base;
+        grid-auto-flow: column;
+        grid-template-columns: 1fr 5fr;
+        input, textarea{
+            font-family: $tipografia;
+            padding: math.div($tam-base,10);
+        }
+    }
+
+}

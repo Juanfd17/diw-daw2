@@ -1,0 +1,40 @@
+aside{
+    display: grid;
+    grid-template-rows: auto auto 1fr;
+
+    background-color: $blanco;
+    article{
+        background-color: $blanco;
+        color:$gris;
+
+        .imgArticle{
+            object-fit: cover;
+            
+            img{
+                height: 100%;
+                width: 100%;
+            }
+            
+        }
+
+        .espaciado{
+            padding: $tam-base;
+            
+            h4{
+                font-size: 2*$tam-base;
+        ;
+            }
+
+            div{
+                /* Define el espaciado entre líneas */
+            }
+        }
+
+    }
+
+    #banner{
+        background-image: url("./img/banner.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
