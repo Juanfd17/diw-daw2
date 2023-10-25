@@ -1,0 +1,30 @@
+footer{
+    background-color: $fondo_oscuro;
+    padding: 0px $tam-base;
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: space-between;
+    align-items: center;
+    color: $gris;
+    font-size: $tam-base * 2;
+
+    .rare-logo{
+        width: 34px;
+    }
+
+    #trabaja{
+        background-image: url("img/footer/equipo.png");
+
+        height: 290px;
+        width: 379px;
+        font-size: 14px;
+        text-transform: uppercase;
+
+        p{
+            position: relative;
+            top: 56%;
+            left: 15%;
+            font-size: $tam-base * 1.3;
+        }
+    }
+}

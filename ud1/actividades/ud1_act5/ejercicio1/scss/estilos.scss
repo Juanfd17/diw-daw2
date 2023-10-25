@@ -4,11 +4,6 @@
 /* Importación de código de secciones */
 @import "reset";
 @import "variables.scss";
-@import "header.scss";
-@import "principal.scss";
-@import "aside.scss";
-@import "contacto.scss";
-@import "footer.scss";
 
 
 /* Estilos generales */
@@ -16,7 +11,7 @@
 *{
     font-family: $tipografia;
     font-weight: 100;
-   /* Ajusta font-weight de acuerdo a la captura mostrada */
+    /* Ajusta font-weight de acuerdo a la captura mostrada */
 }
 
 body{
@@ -54,3 +49,9 @@ main{
 .azulin{
     background-color: $azul_claro;
 }
+
+@import "header.scss";
+@import "principal.scss";
+@import "aside.scss";
+@import "contacto.scss";
+@import "footer.scss";

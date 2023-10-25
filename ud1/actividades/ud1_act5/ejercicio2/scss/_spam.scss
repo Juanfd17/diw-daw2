@@ -1,0 +1,10 @@
+#spam{
+    grid-column: 2;
+    text-align: center;
+    color: black;
+    font-family: $tipografiaTitulos;
+    font-size: $tam-base * 2.3;
+    padding: $tam-base * 17;
+    background-image: url("./img/spam/fondo.jpg");
+    background-repeat: no-repeat;
+}
