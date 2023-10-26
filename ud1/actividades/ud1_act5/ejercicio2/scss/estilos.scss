@@ -22,7 +22,7 @@ h1 h2 h3 {
 }
 
 body{
-    background-color: $fondo_oscuro;
+    background: #0b1e24 linear-gradient(to right, rgb(1, 13, 11) 0%, rgb(11, 30, 36) 25%, rgb(11, 30, 36) 75%, rgb(1, 13, 11) 100%) repeat-y;
 }
 
 #contenedor{

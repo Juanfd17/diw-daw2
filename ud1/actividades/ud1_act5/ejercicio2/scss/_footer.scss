@@ -1,12 +1,13 @@
 footer{
-    background-color: $fondo_oscuro;
-    padding: 0px $tam-base;
+    font-family: $tipografiaTitulos;
+    padding: $tam-base * 2;
     display: grid;
     grid-auto-flow: column;
     justify-content: space-between;
     align-items: center;
-    color: $gris;
+    color: $blanco;
     font-size: $tam-base * 2;
+    background: url("./img/footer/fondo.svg") no-repeat 50% 50%/100% 100%;
 
     .rare-logo{
         width: 34px;
@@ -21,9 +22,10 @@ footer{
         text-transform: uppercase;
 
         p{
+            color: $gris;
             position: relative;
             top: 56%;
-            left: 15%;
+            left: 10%;
             font-size: $tam-base * 1.3;
         }
     }

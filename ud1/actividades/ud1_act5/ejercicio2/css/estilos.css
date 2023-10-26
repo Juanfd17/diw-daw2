@@ -502,6 +502,7 @@ header {
   display: grid;
   grid-auto-flow: column;
   align-items: center;
+  font-family: "Windlass";
 }
 header #identidad {
   display: grid;
@@ -512,7 +513,6 @@ header #identidad {
 }
 header #identidad h2 {
   font-size: 2rem;
-  font-family: "Windlass";
 }
 header nav ul {
   display: grid;
@@ -535,7 +535,7 @@ header #social {
   display: grid;
   grid-auto-flow: column;
   justify-content: center;
-  gap: 0.2rem;
+  gap: 1rem;
 }
 header #social i {
   font-size: 2rem;
@@ -622,11 +622,6 @@ aside article .espaciado h4 {
 aside article .espaciado div {
   /* Define el espaciado entre líneas */
 }
-aside #banner {
-  background-image: url("./img/banner.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
 
 #spam {
   grid-column: 2;
@@ -637,17 +632,61 @@ aside #banner {
   padding: 17rem;
   background-image: url("./img/spam/fondo.jpg");
   background-repeat: no-repeat;
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+}
+
+#spam:hover {
+  transform: rotateY(180deg);
+  background-image: none;
+  background-image: url("./img/fondo-entrada.svg");
+}
+#spam:hover h3 {
+  display: none;
+}
+
+#spam .content {
+  position: relative;
+  opacity: 1;
+  transition: opacity 0.5s;
+}
+
+#spam:hover .content {
+  opacity: 0;
+}
+
+#spam form {
+  display: none;
+  transform: rotateY(180deg);
+  /* Rotación del formulario cuando está en el lado posterior */
+  transform-origin: center;
+}
+
+button {
+  font-family: "Windlass";
+  padding: 1rem;
+}
+
+input {
+  margin: 1rem;
+}
+
+#spam:hover form {
+  display: block;
+  /* Asegúrate de que el formulario sea visible cuando se gire */
+  transform: rotateY(0deg) rotate(0deg, 0deg); /* Corrección de rotación para el formulario */
 }
 
 footer {
-  background-color: rgb(89, 89, 89);
-  padding: 0px 1rem;
+  font-family: "Windlass";
+  padding: 2rem;
   display: grid;
   grid-auto-flow: column;
   justify-content: space-between;
   align-items: center;
-  color: rgb(30, 30, 30);
+  color: rgb(165, 165, 165);
   font-size: 2rem;
+  background: url("./img/footer/fondo.svg") no-repeat 50% 50%/100% 100%;
 }
 footer .rare-logo {
   width: 34px;
@@ -660,9 +699,10 @@ footer #trabaja {
   text-transform: uppercase;
 }
 footer #trabaja p {
+  color: rgb(30, 30, 30);
   position: relative;
   top: 56%;
-  left: 15%;
+  left: 10%;
   font-size: 1.3rem;
 }
 
@@ -676,7 +716,7 @@ h1 h2 h3 {
 }
 
 body {
-  background-color: rgb(89, 89, 89);
+  background: #0b1e24 linear-gradient(to right, rgb(1, 13, 11) 0%, rgb(11, 30, 36) 25%, rgb(11, 30, 36) 75%, rgb(1, 13, 11) 100%) repeat-y;
 }
 
 #contenedor {

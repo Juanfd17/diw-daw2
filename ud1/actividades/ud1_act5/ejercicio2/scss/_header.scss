@@ -5,6 +5,7 @@ header{
     display: grid;
     grid-auto-flow: column;
     align-items: center;
+    font-family: $tipografiaTitulos;
     
     #identidad{
         display: grid;
@@ -15,7 +16,6 @@ header{
     
         h2{
             font-size: $tam-base * 2;
-            font-family: $tipografiaTitulos;
         }
     }
 
@@ -45,7 +45,7 @@ header{
         display: grid;
         grid-auto-flow: column;
         justify-content: center;
-        gap: $tam-base * 0.2;
+        gap: $tam-base * 1;
 
         i{
             font-size: 2*$tam-base;
