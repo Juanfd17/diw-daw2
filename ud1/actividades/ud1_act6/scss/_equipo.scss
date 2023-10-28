@@ -1,0 +1,29 @@
+#meet-team{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: $tam-base;
+
+    article{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: $tam-base * 0.6;
+        background-color: rgb(245, 245, 245);
+        padding: $tam-base * 0.3;
+
+        img{
+            grid-column: 2;
+            width: 100%;
+            height: 100%;
+        }
+
+        h3, span, p{
+            text-align: center;
+            grid-column-start: 1;
+            grid-column-end: -1;
+        }
+
+        p{
+            text-align: start;
+        }
+    }
+}

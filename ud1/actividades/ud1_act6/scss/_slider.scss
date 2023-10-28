@@ -1,0 +1,23 @@
+#main-slider{
+    background-image: url("./img/banner/banner.jpg");
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: $tam-base;
+
+    justify-content: end;
+    color: white;
+    text-align: end;
+
+    h2{
+        background-color: $azul-claro;
+        padding: $tam-base * 0.2;
+        font-size: $tam-base * 1.4;
+        margin-bottom: $tam-base;
+    }
+
+    a{
+        padding: $tam-base;
+        background-color: $azul-claro;
+    }
+}

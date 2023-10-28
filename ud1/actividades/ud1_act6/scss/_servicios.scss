@@ -1,0 +1,26 @@
+#services{
+    display: grid;
+    gap: $tam-base;
+    grid-template-columns: repeat(3, 1fr);
+
+    article{
+        padding: $tam-base;
+        display: grid;
+        grid-auto-flow: column;
+        align-items: center;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+
+        i{
+            color: $azul-claro;
+            grid-row: span 3;
+            text-align: center;
+            font-size: $tam-base * 2;
+        }
+
+        h4, p{
+            text-align: center;
+            grid-column: span 2;
+        }
+    }
+}
