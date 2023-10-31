@@ -1,0 +1,40 @@
+#cabecera {
+    background-color: $verde;
+    color:$blanco;
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: $tam-base 0px;
+
+    .logo {
+        font-size: 4*$tam-base;
+        a{
+            font-family: $tipografia-titulo;
+            color: $blanco;
+        }
+        
+        .logo-naranja {
+            color: $naranja;
+            font-family: $tipografia-titulo;
+        }
+    }
+
+    .nav{
+        display: grid;
+        grid-auto-flow: column;
+        list-style: none;
+        gap: $tam-base;
+        
+        li{ 
+            a{
+                color: $blanco;
+                padding: $tam-base;
+            }
+
+            :hover{
+                background-color: $menu-resaltado;
+            }
+        }
+    }
+}

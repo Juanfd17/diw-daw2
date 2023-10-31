@@ -1,0 +1,39 @@
+@use "sass:math";
+@import "reset";
+@import "variables";
+@import "datos_contacto";
+@import "cabecera";
+@import "banner";
+@import "servicios";
+@import "portfolio";
+@import "contacto";
+@import "pie";
+
+/* Añade los import a las distintas secciones */
+
+@font-face {
+    font-family: $tipografia-general;
+    src: url("fonts/" + $tipografia-general + "-regular.ttf");
+}
+
+@font-face {
+    font-family: $tipografia-titulo;
+    src: url("fonts/" + $tipografia-titulo + "-regular.otf");
+}
+
+* {
+    font-family: $tipografia-general;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.titulo{
+    font-size: $tam-base * 2;
+}
+
+.intro{
+    font-size: $tam-base * 1;
+    color: $gris;
+}

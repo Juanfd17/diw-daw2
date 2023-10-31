@@ -1,0 +1,45 @@
+#portfolio {
+    background-color: $gris-claro;
+    text-align: center;
+    padding: $tam-base;
+    a {
+
+        color: $azul-oscuro;
+        font-size: 2*$tam-base;
+    }
+
+    .imgPorfolio{
+        padding: $tam-base;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .panel-portfolio {
+        padding: $tam-base * 2;
+        flex-basis: 20%;
+        height: 12vw;
+        background-size: cover;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-end;
+        
+        a{
+            padding: $tam-base;
+            background-color: $naranja;
+            border-radius: 5%;
+        }
+    }
+
+    #portfolio-kyocera {
+        background-image: url("img/portfolio/kyocera.png");
+    }
+
+    #portfolio-sanitas {
+        background-image: url("img/portfolio/sanitas.png");
+    }
+
+    #portfolio-kadabra {
+        background-image: url("img/portfolio/kadabra.png");
+
+    }
+}

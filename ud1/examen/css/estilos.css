@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Custom resets */
 /* Box-sizing */
 html {
@@ -491,128 +492,299 @@ template {
   display: none;
 }
 
-header {
-  display: grid;
-  grid-auto-flow: column;
-  justify-content: space-between;
-  padding: 1.2em;
-  color: #45aed6;
+#datos-contacto {
+  background-color: #2B2B2B;
+  color: #F7F7F7;
+  display: flex;
+  justify-content: space-around;
   align-items: center;
+  padding: 1rem;
 }
-header a {
+#datos-contacto .social {
+  flex-basis: 15%;
   display: flex;
-  align-items: end;
+  gap: 1rem;
 }
-header ul {
-  display: flex;
-  gap: 1.2em;
+#datos-contacto .social .boton, #datos-contacto .social a {
+  height: 2vw;
+  width: 2vw;
+}
+#datos-contacto .social .boton {
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+#datos-contacto .social :hover {
+  opacity: 70%;
+}
+#datos-contacto .facebook {
+  background-image: url("img/social/facebook.png");
+}
+#datos-contacto .linkedin {
+  background-image: url("img/social/linkedin.png");
+}
+#datos-contacto .google {
+  background-image: url("img/social/google.png");
+}
+#datos-contacto .twitter {
+  background-image: url("img/social/twitter.png");
 }
 
-#main-slider {
-  background-image: url("./img/banner/banner.jpg");
+#cabecera {
+  background-color: #1FD1AC;
+  color: #F7F7F7;
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem 0px;
+}
+#cabecera .logo {
+  font-size: 4rem;
+}
+#cabecera .logo a {
+  font-family: "Lobster";
+  color: #F7F7F7;
+}
+#cabecera .logo .logo-naranja {
+  color: #E68727;
+  font-family: "Lobster";
+}
+#cabecera .nav {
+  display: grid;
+  grid-auto-flow: column;
+  list-style: none;
+  gap: 1rem;
+}
+#cabecera .nav li a {
+  color: #F7F7F7;
+  padding: 1rem;
+}
+#cabecera .nav li :hover {
+  background-color: #15846D;
+}
+
+#banner {
+  text-align: center;
+  color: #F7F7F7;
+  height: 13vw;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  padding: 1rem;
+  background-image: url("img/banner.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#banner .titulo {
+  font-size: 3rem;
+}
+#banner .subtitulo {
+  font-size: 1.5rem;
+  color: #F7F7F7;
+  background-color: #E68727;
+  border-radius: 0.5rem;
+  padding: 0.5rem 3rem;
+}
+
+#servicios {
+  padding: 1rem;
+}
+#servicios .servicios {
+  display: flex;
+  justify-content: space-around;
+  padding: 2rem;
+}
+#servicios .servicio {
+  flex-basis: 25%;
+  gap: 1rem;
   display: flex;
   flex-direction: column;
-  align-items: end;
-  gap: 1.2em;
-  padding: 1.2em;
-  justify-content: end;
-  color: white;
-  text-align: end;
-}
-#main-slider h2 {
-  background-color: #45aed6;
-  padding: 0.24em;
-  font-size: 1.68em;
-  margin-bottom: 1.2em;
-}
-#main-slider a {
-  padding: 1.2em;
-  background-color: #45aed6;
-}
-
-#services {
-  display: grid;
-  gap: 1.2em;
-  grid-template-columns: repeat(3, 1fr);
-}
-#services article {
-  padding: 1.2em;
-  display: grid;
-  grid-auto-flow: column;
+  justify-content: center;
   align-items: center;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
 }
-#services article i {
-  color: #45aed6;
-  grid-row: span 3;
-  text-align: center;
-  font-size: 2.4em;
+#servicios .servicio .logo {
+  border-radius: 50%;
+  height: 10vw;
+  width: 10vw;
+  background-size: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: 0.5s all;
 }
-#services article h4, #services article p {
+#servicios .servicio .logo:hover {
+  box-shadow: 0px 0px 12px 6px black;
+}
+#servicios .servicio p {
   text-align: center;
-  grid-column: span 2;
+  color: #34495E;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+#servicios #diseno-web {
+  background-color: #1FD1AC;
+  background-image: url("img/servicios/diseno_web.png");
+}
+#servicios #tiendas-online {
+  background-color: #E84C3F;
+  background-image: url("img/servicios/tiendas_online.png");
+}
+#servicios #desarrollo-medida {
+  background-color: #E68727;
+  background-image: url("img/servicios/medida.png");
+}
+#servicios #diseno-grafico {
+  background-color: #34495E;
+  background-image: url("img/servicios/diseno_grafico.png");
+}
+#servicios #marketing {
+  background-color: #4B215B;
+  background-image: url("img/servicios/marketing.png");
+}
+#servicios #posicionamiento {
+  background-color: #F0C40F;
+  background-image: url("img/servicios/posicionamiento.png");
+}
+#servicios .titulo {
+  text-align: center;
+  color: #34495E;
+}
+#servicios .intro {
+  text-align: center;
+  font-size: 1.3rem;
+  color: #ACB1B5;
 }
 
 #portfolio {
-  display: grid;
-  gap: 1.2em;
-  grid-template-columns: repeat(2, 1fr);
-}
-#portfolio img {
-  width: 100%;
-  height: 100%;
-}
-
-#meet-team {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 1.2em;
-}
-#meet-team article {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 0.72em;
-  background-color: rgb(245, 245, 245);
-  padding: 0.36em;
-}
-#meet-team article img {
-  grid-column: 2;
-  width: 100%;
-  height: 100%;
-}
-#meet-team article h3, #meet-team article span, #meet-team article p {
+  background-color: #ECF0F1;
   text-align: center;
-  grid-column-start: 1;
-  grid-column-end: -1;
+  padding: 1rem;
 }
-#meet-team article p {
-  text-align: start;
+#portfolio a {
+  color: #34495E;
+  font-size: 2rem;
 }
-
-footer {
+#portfolio .imgPorfolio {
+  padding: 1rem;
   display: flex;
   justify-content: space-around;
-  background-color: rgb(46, 46, 46);
-  padding: 0.6em;
-  color: white;
 }
-footer ul {
+#portfolio .panel-portfolio {
+  padding: 2rem;
+  flex-basis: 20%;
+  height: 12vw;
+  background-size: cover;
   display: flex;
-  gap: 1.2em;
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+#portfolio .panel-portfolio a {
+  padding: 1rem;
+  background-color: #E68727;
+  border-radius: 5%;
+}
+#portfolio #portfolio-kyocera {
+  background-image: url("img/portfolio/kyocera.png");
+}
+#portfolio #portfolio-sanitas {
+  background-image: url("img/portfolio/sanitas.png");
+}
+#portfolio #portfolio-kadabra {
+  background-image: url("img/portfolio/kadabra.png");
 }
 
-#wrapper {
+#contacto {
+  padding: 3rem;
   display: grid;
-  gap: 1.2em;
-  padding: 0px 1.2em;
-}
-
-.section-header {
-  grid-column-start: 1;
-  grid-column-end: -1;
+  gap: 1rem;
+  justify-content: center;
+  font-family: "Lato";
   text-align: center;
 }
-.section-header h2 {
-  font-size: 1.8em;
+#contacto .boton {
+  border: 2px solid #34495E;
+  border-radius: 5px;
+  animation: gira 0.2s;
+  padding: 1rem;
+  transition: all 0.5s;
+}
+#contacto .boton:hover {
+  background-color: #2B2B2B;
+  color: #F7F7F7;
+  transform: rotateY(360deg);
+}
+
+#pie {
+  background-color: #2B2B2B;
+  color: #F7F7F7;
+  display: grid;
+  grid-auto-flow: column;
+  padding: 1rem;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+}
+#pie .social {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: center;
+  gap: 1rem;
+}
+#pie .social a {
+  width: 5vw;
+}
+#pie .social a .boton {
+  height: 3vw;
+  width: 3vw;
+  background-repeat: no-repeat;
+  background-size: contain;
+  transition: 0.5s all;
+}
+#pie .social a :hover {
+  opacity: 70%;
+}
+#pie .facebook {
+  background-image: url("img/social/facebook.png");
+}
+#pie .linkedin {
+  background-image: url("img/social/linkedin.png");
+}
+#pie .google {
+  background-image: url("img/social/google.png");
+}
+#pie .twitter {
+  background-image: url("img/social/twitter.png");
+}
+#pie .logo a {
+  font-family: "Lobster";
+}
+#pie .logo_naranja {
+  font-family: "Lobster";
+  color: #E68727;
+}
+
+/* Añade los import a las distintas secciones */
+@font-face {
+  font-family: "Lato";
+  src: url("fonts/Lato-regular.ttf");
+}
+@font-face {
+  font-family: "Lobster";
+  src: url("fonts/Lobster-regular.otf");
+}
+* {
+  font-family: "Lato";
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.titulo {
+  font-size: 2rem;
+}
+
+.intro {
+  font-size: 1rem;
+  color: #ACB1B5;
 }

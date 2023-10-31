@@ -1,0 +1,22 @@
+#contacto {
+    padding: $tam-base * 3;
+    display: grid;
+    gap: $tam-base;
+    justify-content: center;
+    font-family: $tipografia-general;
+    text-align: center;
+
+    .boton {
+        border: 2px solid $azul-oscuro;
+        border-radius: 5px;
+        animation: gira .2s;
+        padding: $tam-base;
+        transition: all 0.5s;
+    }
+
+    .boton:hover{
+        background-color: $negro;
+        color: $blanco;
+        transform: rotateY(360deg);
+    }
+}

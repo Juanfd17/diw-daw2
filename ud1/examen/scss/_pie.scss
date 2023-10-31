@@ -1,0 +1,61 @@
+#pie{
+    background-color: $negro;
+    color:$blanco;
+    display: grid;
+    grid-auto-flow: column;
+    padding: $tam-base;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+
+    .social{
+        display: grid;
+        grid-auto-flow: column;
+        justify-content: center;
+        gap: $tam-base;
+
+        a{
+            width: 5vw;
+
+            .boton{
+                height: 3vw;
+                width: 3vw;
+                background-repeat: no-repeat;
+                background-size: contain;
+                transition: 0.5s all;
+            }
+            
+            :hover{
+                opacity: 70%;
+            }
+        }
+    }
+
+    .facebook {
+        background-image: url("img/social/facebook.png");
+    }
+    
+    .linkedin {
+        background-image: url("img/social/linkedin.png");
+    }
+    
+    .google {
+        background-image: url("img/social/google.png");
+    }   
+    
+    .twitter {
+        background-image: url("img/social/twitter.png");
+    }
+
+    .logo{
+        a{
+            font-family: $tipografia-titulo;
+        }
+    }
+
+    .logo_naranja {
+        font-family: $tipografia-titulo;
+        color: $naranja;
+    }
+}
+
+

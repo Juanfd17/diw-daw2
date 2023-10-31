@@ -1,0 +1,27 @@
+
+#banner {
+    text-align: center;
+    color:$blanco;
+    height: 13vw;
+    display: flex;
+    gap: $tam-base;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    padding: $tam-base;
+    background-image: url("img/banner.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .titulo  {
+        font-size: 3*$tam-base;
+    }
+
+    .subtitulo{
+        font-size: 1.5*$tam-base;
+        color: $blanco;
+        background-color: $naranja;
+        border-radius: math.div($tam-base,2);
+        padding: $tam-base * 0.5 $tam-base * 3;
+    }
+}

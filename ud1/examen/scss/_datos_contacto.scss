@@ -1,0 +1,45 @@
+
+#datos-contacto {
+    background-color: $negro;
+    color: $blanco;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: $tam-base;
+
+    .social{
+
+        flex-basis: 15%;
+        display: flex;
+        gap: $tam-base;
+        .boton, a{
+            height: 2vw;
+            width: 2vw;
+        }
+
+        .boton{
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+
+        :hover{
+            opacity: 70%;
+        }
+    }
+
+    .facebook {
+        background-image: url("img/social/facebook.png");
+    }
+    
+    .linkedin {
+        background-image: url("img/social/linkedin.png");
+    }
+    
+    .google {
+        background-image: url("img/social/google.png");
+    }   
+    
+    .twitter {
+        background-image: url("img/social/twitter.png");
+    }
+}
