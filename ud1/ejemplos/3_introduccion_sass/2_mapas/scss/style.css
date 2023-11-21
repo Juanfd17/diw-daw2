@@ -1,0 +1,24 @@
+.error {
+  background-color: #FF0000;
+}
+.error:hover {
+  opacity: 50%;
+}
+
+.exito {
+  background-color: #00FF00;
+}
+.exito:hover {
+  opacity: 50%;
+}
+
+.info {
+  background-color: #0000FF;
+}
+.info:hover {
+  opacity: 50%;
+}
+
+button {
+  color: white;
+}/*# sourceMappingURL=style.css.map */

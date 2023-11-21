@@ -1,0 +1,21 @@
+.spritesheet-container {
+  width: 71px;
+  height: 71px;
+  overflow: hidden;
+}
+
+.sprite {
+  width: 1136px;
+  height: 71px;
+  background-image: url("img/monstruo.png");
+  animation: animacion-sprites 1s steps(16) infinite;
+}
+
+@keyframes animacion-sprites {
+  0% {
+    background-position: 0;
+  }
+  100% {
+    background-position: -1136px;
+  }
+}/*# sourceMappingURL=style.css.map */

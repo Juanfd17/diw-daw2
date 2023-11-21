@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.8em;
+}
+
+#contenedor {
+    padding:0 1em;
+    display:grid;
+    gap:1em;
+   
+    p {
+        background-color: cadetblue;
+        padding: 1em;
+      
+    }
+}
+
+
+@media screen and (max-width:479px) {
+    #contenedor .x-small{
+        background-color: rgb(255, 255, 0);
+    }
+}
+
+
+@media screen and (min-width:480px) and (max-width:699px) {
+    #contenedor .small{
+        background-color: rgb(154, 205, 50);
+    }
+}
+
+@media screen and (min-width:700px) and (max-width:1199px) {
+    #contenedor .medium{
+        background-color: rgb(65, 105, 225);
+    }
+}
+
+@media screen and (min-width:1200px) {
+    #contenedor .big{
+        background-color: rgb(255, 165, 0);
+    }
+}

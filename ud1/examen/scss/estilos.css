@@ -1,0 +1,791 @@
+@charset "UTF-8";
+/* Custom resets */
+/* Box-sizing */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:after,
+*:before,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+/* Body */
+body {
+  margin: 0;
+}
+
+/* Content */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+blockquote,
+p,
+pre,
+dl,
+dd,
+ol,
+ul,
+figure,
+hr,
+fieldset,
+legend {
+  margin: 0;
+  padding: 0;
+}
+
+/* Lists */
+li,
+ol {
+  padding: 0;
+  list-style: none;
+}
+
+/* Buttons */
+button {
+  color: inherit;
+  background-color: transparent;
+  padding: 0;
+  box-shadow: none;
+  border: none;
+  font-weight: inherit;
+}
+
+/* normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in
+ *    IE on Windows Phone and in iOS.
+ */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ */
+article,
+aside,
+footer,
+header,
+nav,
+section {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  margin: 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in IE.
+ */
+figcaption,
+figure,
+main {
+  /* 1 */
+  display: block;
+}
+
+/**
+ * Add the correct margin in IE 8.
+ */
+figure {
+  margin: 1em 40px;
+}
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * 1. Remove the gray background on active links in IE 10.
+ * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
+ */
+a {
+  background-color: transparent;
+  /* 1 */
+  -webkit-text-decoration-skip: objects;
+  /* 2 */
+  color: inherit;
+  text-decoration: none;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57- and Firefox 39-.
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+  /* 2 */
+}
+
+/**
+ * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
+ */
+b,
+strong {
+  font-weight: inherit;
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+ * Add the correct font style in Android 4.3-.
+ */
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Add the correct background and color in IE 9-.
+ */
+mark {
+  background-color: #ff0;
+  color: #000;
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ */
+audio,
+video {
+  display: inline-block;
+}
+
+/**
+ * Add the correct display in iOS 4-7.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Remove the border on images inside links in IE 10-.
+ */
+img {
+  border-style: none;
+}
+
+/**
+ * Hide the overflow in IE.
+ */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers (opinionated).
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: sans-serif;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+ * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
+ *    controls in Android 4.
+ * 2. Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+html [type=button],
+[type=reset],
+[type=submit] {
+  -webkit-appearance: button;
+  /* 2 */
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+
+/**
+ * 1. Add the correct display in IE 9-.
+ * 2. Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */
+}
+
+/**
+ * Remove the default vertical scrollbar in IE.
+ */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10-.
+ * 2. Remove the padding in IE 10-.
+ */
+[type=checkbox],
+[type=radio] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type=search] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+ * Remove the inner padding and cancel buttons in Chrome and Safari on macOS.
+ */
+[type=search]::-webkit-search-cancel-button,
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in Edge, IE, and Firefox.
+ */
+details,
+menu {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+
+/* Scripting
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ */
+canvas {
+  display: inline-block;
+}
+
+/**
+ * Add the correct display in IE.
+ */
+template {
+  display: none;
+}
+
+/* Hidden
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10-.
+ */
+[hidden] {
+  display: none;
+}
+
+#datos-contacto {
+  background-color: #2B2B2B;
+  color: #F7F7F7;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem;
+}
+#datos-contacto .social {
+  flex-basis: 15%;
+  display: flex;
+  gap: 1rem;
+}
+#datos-contacto .social .boton, #datos-contacto .social a {
+  height: 2vw;
+  width: 2vw;
+}
+#datos-contacto .social .boton {
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+#datos-contacto .social :hover {
+  opacity: 70%;
+}
+#datos-contacto .facebook {
+  background-image: url("img/social/facebook.png");
+}
+#datos-contacto .linkedin {
+  background-image: url("img/social/linkedin.png");
+}
+#datos-contacto .google {
+  background-image: url("img/social/google.png");
+}
+#datos-contacto .twitter {
+  background-image: url("img/social/twitter.png");
+}
+
+#cabecera {
+  background-color: #1FD1AC;
+  color: #F7F7F7;
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem 0px;
+}
+#cabecera .logo {
+  font-size: 4rem;
+}
+#cabecera .logo a {
+  font-family: "Lobster";
+  color: #F7F7F7;
+}
+#cabecera .logo .logo-naranja {
+  color: #E68727;
+  font-family: "Lobster";
+}
+#cabecera .nav {
+  display: grid;
+  grid-auto-flow: column;
+  list-style: none;
+  gap: 1rem;
+}
+#cabecera .nav li a {
+  color: #F7F7F7;
+  padding: 1rem;
+}
+#cabecera .nav li :hover {
+  background-color: #15846D;
+}
+
+#banner {
+  text-align: center;
+  color: #F7F7F7;
+  height: 13vw;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  padding: 1rem;
+  background-image: url("img/banner.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#banner .titulo {
+  font-size: 3rem;
+}
+#banner .subtitulo {
+  font-size: 1.5rem;
+  color: #F7F7F7;
+  background-color: #E68727;
+  border-radius: 0.5rem;
+  padding: 0.5rem 3rem;
+}
+
+#servicios {
+  padding: 1rem;
+}
+#servicios .servicios {
+  display: flex;
+  justify-content: space-around;
+  padding: 2rem;
+}
+#servicios .servicio {
+  flex-basis: 25%;
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#servicios .servicio .logo {
+  border-radius: 50%;
+  height: 10vw;
+  width: 10vw;
+  background-size: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: 0.5s all;
+}
+#servicios .servicio .logo:hover {
+  box-shadow: 0px 0px 12px 6px black;
+}
+#servicios .servicio p {
+  text-align: center;
+  color: #34495E;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+#servicios #diseno-web {
+  background-color: #1FD1AC;
+  background-image: url("img/servicios/diseno_web.png");
+}
+#servicios #tiendas-online {
+  background-color: #E84C3F;
+  background-image: url("img/servicios/tiendas_online.png");
+}
+#servicios #desarrollo-medida {
+  background-color: #E68727;
+  background-image: url("img/servicios/medida.png");
+}
+#servicios #diseno-grafico {
+  background-color: #34495E;
+  background-image: url("img/servicios/diseno_grafico.png");
+}
+#servicios #marketing {
+  background-color: #4B215B;
+  background-image: url("img/servicios/marketing.png");
+}
+#servicios #posicionamiento {
+  background-color: #F0C40F;
+  background-image: url("img/servicios/posicionamiento.png");
+}
+#servicios .titulo {
+  text-align: center;
+  color: #34495E;
+}
+#servicios .intro {
+  text-align: center;
+  font-size: 1.3rem;
+  color: #ACB1B5;
+}
+
+#portfolio {
+  background-color: #ECF0F1;
+  text-align: center;
+  padding: 1rem;
+}
+#portfolio a {
+  color: #34495E;
+  font-size: 2rem;
+}
+#portfolio .imgPorfolio {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-around;
+}
+#portfolio .panel-portfolio {
+  padding: 2rem;
+  flex-basis: 20%;
+  height: 12vw;
+  background-size: cover;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+#portfolio .panel-portfolio a {
+  padding: 1rem;
+  background-color: #E68727;
+  border-radius: 5%;
+}
+#portfolio #portfolio-kyocera {
+  background-image: url("img/portfolio/kyocera.png");
+}
+#portfolio #portfolio-sanitas {
+  background-image: url("img/portfolio/sanitas.png");
+}
+#portfolio #portfolio-kadabra {
+  background-image: url("img/portfolio/kadabra.png");
+}
+
+#contacto {
+  padding: 3rem;
+  display: grid;
+  gap: 1rem;
+  justify-content: center;
+  font-family: "Lato";
+  text-align: center;
+}
+#contacto .boton {
+  border: 2px solid #34495E;
+  border-radius: 5px;
+  animation: gira 0.2s;
+  padding: 1rem;
+  transition: all 0.5s;
+}
+#contacto .boton:hover {
+  background-color: #2B2B2B;
+  color: #F7F7F7;
+  transform: rotateY(360deg);
+}
+
+#pie {
+  background-color: #2B2B2B;
+  color: #F7F7F7;
+  display: grid;
+  grid-auto-flow: column;
+  padding: 1rem;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+}
+#pie .social {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: center;
+  gap: 1rem;
+}
+#pie .social a {
+  width: 5vw;
+}
+#pie .social a .boton {
+  height: 3vw;
+  width: 3vw;
+  background-repeat: no-repeat;
+  background-size: contain;
+  transition: 0.5s all;
+}
+#pie .social a :hover {
+  opacity: 70%;
+}
+#pie .facebook {
+  background-image: url("img/social/facebook.png");
+}
+#pie .linkedin {
+  background-image: url("img/social/linkedin.png");
+}
+#pie .google {
+  background-image: url("img/social/google.png");
+}
+#pie .twitter {
+  background-image: url("img/social/twitter.png");
+}
+#pie .logo a {
+  font-family: "Lobster";
+}
+#pie .logo_naranja {
+  font-family: "Lobster";
+  color: #E68727;
+}
+
+/* Añade los import a las distintas secciones */
+@font-face {
+  font-family: "Lato";
+  src: url("fonts/Lato-regular.ttf");
+}
+@font-face {
+  font-family: "Lobster";
+  src: url("fonts/Lobster-regular.otf");
+}
+* {
+  font-family: "Lato";
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.titulo {
+  font-size: 2rem;
+}
+
+.intro {
+  font-size: 1rem;
+  color: #ACB1B5;
+}/*# sourceMappingURL=estilos.css.map */

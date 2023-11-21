@@ -1,0 +1,15 @@
+.paisaje {
+  width: 200px;
+  height: 200px;
+  margin: 1em;
+  border: 2px solid black;
+  background-image: url("https://media.istockphoto.com/id/1407786189/es/foto/la-ma%C3%B1ana-del-lago-con-hojas-de-color-rojo.jpg?s=612x612&w=0&k=20&c=g42vMKg2vYZKCFOJjF7PHKCR7k9cn3K4mhMEJ8Iv1bY=");
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: transform, opacity, backgr 5s ease-out 1s;
+}
+.paisaje:hover {
+  transform: skew(50deg, 90deg);
+  opacity: 20%;
+  background-color: aqua;
+}/*# sourceMappingURL=style.css.map */

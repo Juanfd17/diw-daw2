@@ -1,0 +1,45 @@
+#contenedor {
+  border: 2px solid black;
+  background-color: rgb(197, 197, 197);
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#facebook {
+  background-image: url("img/sprite.png");
+  background-position: right 100px top 0px;
+}
+#facebook:hover {
+  background-position: right 100px top 100px;
+}
+
+#twitter {
+  background-image: url("img/sprite.png");
+  background-position: right 205px top 0px;
+}
+#twitter:hover {
+  background-position: right 205px top 100px;
+}
+
+#you_tube {
+  background-image: url("img/sprite.png");
+  background-position: right 310px top 0px;
+}
+#you_tube:hover {
+  background-position: right 310px top 100px;
+}
+
+#instagram {
+  background-image: url("img/sprite.png");
+  background-position: right 415px top 0px;
+}
+#instagram:hover {
+  background-position: right 415px top 100px;
+}
+
+.icono {
+  width: 100px;
+  height: 100px;
+}/*# sourceMappingURL=style.css.map */

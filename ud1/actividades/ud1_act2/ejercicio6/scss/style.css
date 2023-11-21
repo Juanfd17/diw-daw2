@@ -1,0 +1,10 @@
+.foto {
+  margin-top: 200px;
+  background-color: #3498db;
+  transition: transform 5s, box-shadow 5s, background-color 5s linear;
+}
+.foto:hover {
+  transform: translateX(1000px) scale(1.5) rotate(360deg);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  background-color: #e74c3c;
+}/*# sourceMappingURL=style.css.map */
