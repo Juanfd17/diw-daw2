@@ -1,13 +1,18 @@
 @charset "UTF-8";
-/* Rejilla responsive: 
-*     -1 columna en resoluciones pequeñas
-*      - 3 puntos de ruptura para resoluciones medianas (md), grandes (lg) y muy grandes (xl)
-*      - Todas ellas con 12 columnas
-*  Cada elemento a maquetar en columnas debe ser .contenedor
-* Los elementos .res-col-XX ocupan XX columnas.
-* Incluye clases .margin-XX para indicar el margen izquierdo
-* Inclye clases hidden-XX para ocultar un elemento 
-*/
+h1 {
+  font-size: 3em;
+}
+
+header {
+  background-color: rgb(255, 152, 0);
+  padding: 2em;
+  color: black;
+}
+
+div {
+  color: black;
+}
+
 * {
   box-sizing: border-box;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -23,13 +28,12 @@
 
 /* El estilo por defecto se aplica a resoluciones pequeñas (<480px) */
 [class*=col-] {
-  background-color: darkkhaki;
   padding: 1em;
   grid-column-end: span 12;
 }
 
 /* Media query para resoluciones entre 480 y 768 */
-@media screen and (min-width: 480px) and (max-width: 758px) {
+@media screen and (max-width: 768px) {
   .col-md-12 {
     grid-column-end: span 12;
   }
@@ -104,7 +108,7 @@
   }
 }
 /* Media query para resoluciones entre 769 y 1200 */
-@media screen and (min-width: 759px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
   .col-lg-12 {
     grid-column-end: span 12;
   }
@@ -179,7 +183,7 @@
   }
 }
 /* Media query para resoluciones mayores que 1200 */
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1024px) {
   .col-xl-12 {
     grid-column-end: span 12;
   }
@@ -252,4 +256,4 @@
   .hidden-xl {
     display: none;
   }
-}/*# sourceMappingURL=rejilla-responsive-completa.css.map */
+}
