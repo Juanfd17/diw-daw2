@@ -1,0 +1,120 @@
+@import "reset.css";
+@import "variables.scss";
+@import "banner.scss";
+@import "header.scss";
+@import "main.scss";
+@import "article.scss";
+@import "seccion.scss";
+@import "footer.scss";
+
+
+@font-face {
+    font-family: Stellar;
+    src: url(font/Stellar-Regular.otf);
+}
+
+* {
+    box-sizing: border-box;
+    font-family: Stellar;
+}
+
+#wrapper {
+    background-color: $blanco;
+    margin: 0 auto;
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    row-gap: 2em;
+    padding: 1em;
+}
+
+.boton:hover {
+    opacity: 70%;
+}
+
+.more {
+    width: 48px;
+    height: 48px;
+    background-image: url(img/boton/more.png);
+    border-radius: 24px;
+    border: 1px solid white;
+    justify-self: end;
+}
+
+.more:hover {
+    opacity: 70%;
+}
+
+// --responsivo--
+
+$columnas: 12;
+$espacio-filas: 1em;
+$espacio-columnas: 1em;
+
+$breakpoints: (
+    "md":(480px, 759px),
+    "lg":(760px, 1199px),
+    "xl":(1200px, false)
+);
+
+.contenedor {
+    display: grid;
+    padding: $espacio-filas;
+    grid-template-columns: repeat($columnas, 1fr);
+    row-gap: $espacio-filas;
+    column-gap: $espacio-columnas;
+}
+
+/* El estilo por defecto se aplica a resoluciones pequeñas  */
+[class*="col-"] {
+    padding: 1em;
+    grid-column-end: span 12;
+}
+
+@mixin breakpoint($min, $max) {
+
+    @if($min==false) {
+        @media screen and (max-width:$max) {
+            @content;
+        }
+    }
+
+    @else if($max==false) {
+        @media screen and (min-width:$min) {
+            @content;
+        }
+    }
+
+    @else {
+        @media screen and (min-width:$min) and (max-width:$max) {
+            @content;
+        }
+    }
+}
+
+@each $nombre, $res in $breakpoints {
+    $min: nth($res, 1);
+    $max: nth($res, 2);
+
+    @include breakpoint($min, $max) {
+        @for $i from 1 through $columnas {
+            .col-#{$nombre}-#{$i} {
+                grid-column-end: span $i
+            }
+
+            ;
+
+            @if($i !=$columnas) {
+                .margin-#{$nombre}-#{$i} {
+                    grid-column-start: $i + 1
+                }
+
+                ;
+            }
+        }
+
+        .hidden-#{$nombre} {
+            display: none;
+        }
+    }
+}

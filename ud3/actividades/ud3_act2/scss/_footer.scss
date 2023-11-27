@@ -1,0 +1,30 @@
+footer {
+    background-color: $grisClaro;
+    grid-column-end: span 12;
+    display: grid;
+    justify-content: center;
+}
+
+footer nav {}
+
+footer nav ul {
+    padding-left: 0px;
+    display: grid;
+    //grid-template-columns: repeat(4, 1fr);
+    column-gap: 1em;
+    align-content: center;
+}
+
+footer nav ul li {
+    list-style-type: none;
+    text-align: center;
+}
+
+footer nav ul li a {
+    text-decoration: none;
+    color: $azul;
+}
+
+footer nav ul li a:hover {
+    text-decoration: underline;
+}

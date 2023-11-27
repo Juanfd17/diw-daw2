@@ -1,0 +1,11 @@
+main {
+    //grid-column-end: span 12;
+    display: grid;
+    //grid-template-columns: repeat(3, 1fr);
+    column-gap: 2em;
+}
+
+main .adorno {
+    width: 48px;
+    height: 48px;
+}

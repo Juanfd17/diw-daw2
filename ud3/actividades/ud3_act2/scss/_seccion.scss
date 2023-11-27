@@ -1,0 +1,24 @@
+#seccion1 {
+    background-color: $azul;
+}
+
+
+#seccion1 .adorno {
+    background-image: url(img/secciones/grid.png);
+}
+
+#seccion2 {
+    background-color: $rojo;
+}
+
+#seccion2 .adorno {
+    background-image: url(img/secciones/world.png);
+}
+
+#seccion3 {
+    background-color: $naranja;
+}
+
+#seccion3 .adorno {
+    background-image: url(img/secciones/child.png);
+}
