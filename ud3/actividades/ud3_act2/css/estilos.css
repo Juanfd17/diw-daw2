@@ -1,22 +1,14 @@
 @charset "UTF-8";
 @import "reset.css";
 #banner {
-  display: grid;
-  grid-column-gap: 2em;
   background-color: white;
   box-shadow: 0px 12px 1px -5px #ebe4e4;
-  padding: 1em;
 }
 
 #banner .adorno {
   background-image: url(img/banner.jpg);
   background-repeat: no-repeat;
   margin: 0px;
-}
-
-#banner .texto {
-  display: grid;
-  gap: 1em;
 }
 
 #banner h1 {
@@ -31,8 +23,6 @@
   background-color: #008cc6;
   color: white;
   border-radius: 0.5em;
-  padding: 1em;
-  justify-self: start;
 }
 
 header {
@@ -94,11 +84,6 @@ header .contact {
   background-color: #22c68b;
 }
 
-main {
-  display: grid;
-  column-gap: 2em;
-}
-
 main .adorno {
   width: 48px;
   height: 48px;
@@ -141,15 +126,10 @@ article p {
 
 footer {
   background-color: #c4d2dc;
-  grid-column-end: span 12;
-  display: grid;
-  justify-content: center;
 }
 
 footer nav ul {
   padding-left: 0px;
-  display: grid;
-  column-gap: 1em;
   align-content: center;
 }
 
@@ -201,6 +181,11 @@ footer nav ul li a:hover {
 
 .more:hover {
   opacity: 70%;
+}
+
+.centrado {
+  display: flex;
+  justify-content: center;
 }
 
 .contenedor {

@@ -1,11 +1,11 @@
 #banner {
     //grid-column: 2 /12;
-    display: grid;
-    grid-column-gap: 2em;
+    //display: grid;
+    //grid-column-gap: 2em;
     //grid-template-columns: 1fr 1fr;
     background-color: white;
     box-shadow: 0px 12px 1px -5px #ebe4e4;
-    padding: 1em;
+    //padding: 1em;
 }
 
 #banner .adorno {
@@ -15,8 +15,8 @@
 }
 
 #banner .texto {
-    display: grid;
-    gap: 1em;
+    //display: grid;
+    //gap: 1em;
 }
 
 #banner h1 {
@@ -31,6 +31,6 @@
     background-color: $azul;
     color: white;
     border-radius: .5em;
-    padding: 1em;
-    justify-self: start;
+    //padding: 1em;
+    //justify-self: start;
 }
