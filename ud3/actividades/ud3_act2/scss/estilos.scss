@@ -119,7 +119,7 @@ $breakpoints: (
     }
 }
 
-@include breakpoint(nth(map-get($breakpoints,"md"),1),nth(map-get($breakpoints,"lg"),2)){
+@include breakpoint(nth(map-get($breakpoints,"md"),1),nth(map-get($breakpoints,"md"),2)){
     /* Ejemplo de uso media query para resoluciones SMALL */
     .elemento_menu{
         background-image: none !important;
@@ -143,11 +143,12 @@ $breakpoints: (
     }
 
     .logo{
-        height: 13em;
+        height: 8em;
+        background-image: url(img/logo_small.png);
     }
 } 
 
-@include breakpoint(nth(map-get($breakpoints,"lg"),1),nth(map-get($breakpoints,"xl"),2)){
+@include breakpoint(nth(map-get($breakpoints,"lg"),1),nth(map-get($breakpoints,"lg"),2)){
    /* Ejemplo de uso media query para resoluciones MEDIUM */
     footer nav ul {
         justify-content: space-around;
@@ -168,7 +169,7 @@ $breakpoints: (
     }
 } 
 
-@include breakpoint(nth(map-get($breakpoints,"lg"),1),nth(map-get($breakpoints,"xl"),2)){
+@include breakpoint(nth(map-get($breakpoints,"xl"),1),nth(map-get($breakpoints,"xl"),2)){
     /* Ejemplo de uso media query para resoluciones LARGE */
 }
 

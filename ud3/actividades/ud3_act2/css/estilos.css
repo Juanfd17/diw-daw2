@@ -429,7 +429,7 @@ footer nav ul li a:hover {
     display: none;
   }
 }
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 759px) {
   /* Ejemplo de uso media query para resoluciones SMALL */
   .elemento_menu {
     background-image: none !important;
@@ -449,10 +449,11 @@ footer nav ul li a:hover {
     margin: 0;
   }
   .logo {
-    height: 13em;
+    height: 8em;
+    background-image: url(img/logo_small.png);
   }
 }
-@media screen and (min-width: 760px) {
+@media screen and (min-width: 760px) and (max-width: 1199px) {
   /* Ejemplo de uso media query para resoluciones MEDIUM */
   footer nav ul {
     justify-content: space-around;
@@ -469,7 +470,7 @@ footer nav ul li a:hover {
     height: 13em;
   }
 }
-@media screen and (min-width: 760px) {
+@media screen and (min-width: 1200px) {
   /* Ejemplo de uso media query para resoluciones LARGE */
 }
 #hamburguesa {
