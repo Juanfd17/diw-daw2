@@ -429,10 +429,30 @@ footer nav ul li a:hover {
     display: none;
   }
 }
-@media screen and (min-width: ) and (max-width: 759px) {
-  /* Ejemplo de uso media query para resoluciones SMALL */
-}
 @media screen and (max-width: 1199px) {
+  /* Ejemplo de uso media query para resoluciones SMALL */
+  .elemento_menu {
+    background-image: none !important;
+    height: 100%;
+    width: 100%;
+    padding: 1em;
+  }
+  footer nav ul {
+    justify-content: space-around;
+  }
+  #banner h1 {
+    padding: 0;
+    margin: 0;
+  }
+  #banner .texto {
+    padding: 0;
+    margin: 0;
+  }
+  .logo {
+    height: 13em;
+  }
+}
+@media screen and (min-width: 760px) {
   /* Ejemplo de uso media query para resoluciones MEDIUM */
   footer nav ul {
     justify-content: space-around;
@@ -451,4 +471,35 @@ footer nav ul li a:hover {
 }
 @media screen and (min-width: 760px) {
   /* Ejemplo de uso media query para resoluciones LARGE */
+}
+#hamburguesa {
+  background-color: #0099cc;
+}
+
+#menu-responsive li:not(:first-child) {
+  display: none;
+}
+
+@media screen and (max-width: 759px) {
+  .responsive li {
+    display: block !important;
+  }
+}
+@media screen and (min-width: 760px) and (max-width: 1199px) {
+  #hamburguesa {
+    display: none;
+    visibility: hidden;
+  }
+  #menu-responsive li:not(:first-child) {
+    display: block !important;
+  }
+}
+@media screen and (min-width: 1200px) {
+  #hamburguesa {
+    display: none;
+    visibility: hidden;
+  }
+  #menu-responsive li:not(:first-child) {
+    display: block !important;
+  }
 }

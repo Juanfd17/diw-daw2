@@ -119,11 +119,35 @@ $breakpoints: (
     }
 }
 
-@include breakpoint(nth(map-get($breakpoints,"sm"),1),nth(map-get($breakpoints,"md"),2)){
+@include breakpoint(nth(map-get($breakpoints,"md"),1),nth(map-get($breakpoints,"lg"),2)){
     /* Ejemplo de uso media query para resoluciones SMALL */
+    .elemento_menu{
+        background-image: none !important;
+        height: 100%;
+        width: 100%;
+        padding: 1em;
+    }
+
+    footer nav ul {
+        justify-content: space-around;
+    }
+
+    #banner h1{
+        padding: 0;
+        margin: 0;
+    }
+
+    #banner .texto{
+        padding: 0;
+        margin: 0;
+    }
+
+    .logo{
+        height: 13em;
+    }
 } 
 
-@include breakpoint(nth(map-get($breakpoints,"md"),1),nth(map-get($breakpoints,"lg"),2)){
+@include breakpoint(nth(map-get($breakpoints,"lg"),1),nth(map-get($breakpoints,"xl"),2)){
    /* Ejemplo de uso media query para resoluciones MEDIUM */
     footer nav ul {
         justify-content: space-around;
@@ -146,4 +170,40 @@ $breakpoints: (
 
 @include breakpoint(nth(map-get($breakpoints,"lg"),1),nth(map-get($breakpoints,"xl"),2)){
     /* Ejemplo de uso media query para resoluciones LARGE */
-}   
+}
+
+#hamburguesa{
+    background-color:#0099cc;
+}
+
+#menu-responsive li:not(:first-child){
+    display:none;
+}
+
+@include breakpoint(nth(map-get($breakpoints,"md"),1),nth(map-get($breakpoints,"md"),2)){
+    .responsive li{
+        display:block !important;    
+    }
+} 
+
+@include breakpoint(nth(map-get($breakpoints,"lg"),1),nth(map-get($breakpoints,"lg"),2)){
+    #hamburguesa{
+        display:none;
+        visibility: hidden;
+    }
+
+    #menu-responsive li:not(:first-child){
+        display:block !important;
+    }
+} 
+
+@include breakpoint(nth(map-get($breakpoints,"xl"),1),nth(map-get($breakpoints,"xl"),2)){
+    #hamburguesa{
+        display:none;
+        visibility: hidden;
+    }
+
+    #menu-responsive li:not(:first-child){
+        display:block !important;
+    }
+} 
