@@ -138,6 +138,10 @@ $breakpoints: (
         padding: 0;
         margin: 0;
     }
+
+    .logo{
+        height: 13em;
+    }
 } 
 
 @include breakpoint(nth(map-get($breakpoints,"lg"),1),nth(map-get($breakpoints,"xl"),2)){
