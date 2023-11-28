@@ -130,7 +130,9 @@ footer {
 
 footer nav ul {
   padding-left: 0px;
-  align-content: center;
+  display: flex;
+  justify-content: center;
+  gap: 1em;
 }
 
 footer nav ul li {
