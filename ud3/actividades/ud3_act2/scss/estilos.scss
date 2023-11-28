@@ -160,6 +160,10 @@ $breakpoints: (
     .logo{
         height: 13em;
     }
+
+    .imgBlog{
+        height: 12em;
+    }
 } 
 
 @include breakpoint(nth(map-get($breakpoints,"lg"),1),nth(map-get($breakpoints,"xl"),2)){
