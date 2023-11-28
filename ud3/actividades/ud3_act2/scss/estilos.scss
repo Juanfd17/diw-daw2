@@ -57,69 +57,89 @@ $espacio-filas: 1em;
 $espacio-columnas: 1em;
 
 $breakpoints: (
-    "md":(480px, 759px),
+    "md":(false, 759px),
     "lg":(760px, 1199px),
     "xl":(1200px, false)
 );
 
-.contenedor {
-    display: grid;
-    padding: $espacio-filas;
-    grid-template-columns: repeat($columnas, 1fr);
-    row-gap: $espacio-filas;
-    column-gap: $espacio-columnas;
+*{
+    box-sizing:border-box;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
-/* El estilo por defecto se aplica a resoluciones pequeñas  */
+
+
+.contenedor{
+    display: grid;
+    padding:$espacio-filas;
+    grid-template-columns: repeat($columnas,1fr);
+    row-gap:$espacio-filas;
+    column-gap:$espacio-columnas;
+}
+
+
 [class*="col-"] {
     padding: 1em;
     grid-column-end: span 12;
 }
 
-@mixin breakpoint($min, $max) {
 
-    @if($min==false) {
+@mixin breakpoint($min,$max){ 
+    @if($min==false){
         @media screen and (max-width:$max) {
             @content;
         }
     }
 
-    @else if($max==false) {
+    @else if($max==false){
         @media screen and (min-width:$min) {
             @content;
         }
     }
 
-    @else {
-        @media screen and (min-width:$min) and (max-width:$max) {
+    @else{
+        @media screen and (min-width:$min) and (max-width:$max){
             @content;
         }
     }
 }
 
-@each $nombre, $res in $breakpoints {
-    $min: nth($res, 1);
-    $max: nth($res, 2);
+@each $nombre,$res in $breakpoints{
+    $min:nth($res,1);
+    $max:nth($res,2);
 
-    @include breakpoint($min, $max) {
+    @include breakpoint($min,$max){
         @for $i from 1 through $columnas {
-            .col-#{$nombre}-#{$i} {
-                grid-column-end: span $i
-            }
-
-            ;
-
-            @if($i !=$columnas) {
-                .margin-#{$nombre}-#{$i} {
-                    grid-column-start: $i + 1
-                }
-
-                ;
+            .col-#{$nombre}-#{$i}{grid-column-end: span $i};
+            @if($i != $columnas){
+                .margin-#{$nombre}-#{$i}{grid-column-start: $i + 1};
             }
         }
-
-        .hidden-#{$nombre} {
-            display: none;
-        }
+    .hidden-#{$nombre}{ display:none;}
     }
 }
+
+@include breakpoint(nth(map-get($breakpoints,"sm"),1),nth(map-get($breakpoints,"md"),2)){
+    /* Ejemplo de uso media query para resoluciones SMALL */
+} 
+
+@include breakpoint(nth(map-get($breakpoints,"md"),1),nth(map-get($breakpoints,"lg"),2)){
+   /* Ejemplo de uso media query para resoluciones MEDIUM */
+    footer nav ul {
+        justify-content: space-around;
+    }
+
+    #banner h1{
+        padding: 0;
+        margin: 0;
+    }
+
+    #banner .texto{
+        padding: 0;
+        margin: 0;
+    }
+} 
+
+@include breakpoint(nth(map-get($breakpoints,"lg"),1),nth(map-get($breakpoints,"xl"),2)){
+    /* Ejemplo de uso media query para resoluciones LARGE */
+}   

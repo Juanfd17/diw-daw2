@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import "reset.css";
 #banner {
   background-color: white;
@@ -190,6 +189,11 @@ footer nav ul li a:hover {
   justify-content: center;
 }
 
+* {
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 .contenedor {
   display: grid;
   padding: 1em;
@@ -198,13 +202,12 @@ footer nav ul li a:hover {
   column-gap: 1em;
 }
 
-/* El estilo por defecto se aplica a resoluciones pequeñas  */
 [class*=col-] {
   padding: 1em;
   grid-column-end: span 12;
 }
 
-@media screen and (min-width: 480px) and (max-width: 759px) {
+@media screen and (max-width: 759px) {
   .col-md-1 {
     grid-column-end: span 1;
   }
@@ -425,4 +428,24 @@ footer nav ul li a:hover {
   .hidden-xl {
     display: none;
   }
+}
+@media screen and (min-width: ) and (max-width: 759px) {
+  /* Ejemplo de uso media query para resoluciones SMALL */
+}
+@media screen and (max-width: 1199px) {
+  /* Ejemplo de uso media query para resoluciones MEDIUM */
+  footer nav ul {
+    justify-content: space-around;
+  }
+  #banner h1 {
+    padding: 0;
+    margin: 0;
+  }
+  #banner .texto {
+    padding: 0;
+    margin: 0;
+  }
+}
+@media screen and (min-width: 760px) {
+  /* Ejemplo de uso media query para resoluciones LARGE */
 }
