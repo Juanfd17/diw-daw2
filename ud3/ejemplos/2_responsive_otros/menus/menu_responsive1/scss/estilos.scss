@@ -56,17 +56,14 @@ footer{
         background-color:#0099cc;
     }
 
-    #menu-responsive li:not(:first-child){
-        display:none;
-    }
-
-  
-    
-   
 
     @include breakpoint(nth(map-get($breakpoints,"sm"),1),nth(map-get($breakpoints,"sm"),2)){
-        .responsive li{
-            display:block !important;    
+        #menu-responsive li:not(:first-child){
+            display:none;
+        }
+    
+        #menu-responsive.responsive li{
+            display:block;    
           }
       } 
 
@@ -77,7 +74,7 @@ footer{
         }
 
         #menu-responsive li:not(:first-child){
-            display:block !important;
+            display:block ;
         }
       } 
 
@@ -88,7 +85,7 @@ footer{
         }
 
         #menu-responsive li:not(:first-child){
-            display:block !important;
+            display:block;
         }
       } 
 
