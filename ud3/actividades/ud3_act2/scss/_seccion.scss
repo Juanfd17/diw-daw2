@@ -22,3 +22,34 @@
 #seccion3 .adorno {
     background-image: url(img/secciones/child.png);
 }
+
+#blog1{
+    background-color: $azulOscuro;
+}
+
+#blog2{
+    background-color: $rojoOscuro;
+}
+
+#blog3{
+    background-color: $verde
+}
+
+.imgBlog{
+    height: 8em;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#blog1 .imgBlog{
+    background-image: url(./img/blog/1.png);
+}
+
+#blog2 .imgBlog{
+    background-image: url(./img/blog/2.png);
+}
+
+#blog3 .imgBlog{
+    background-image: url(./img/blog/3.png);
+}

@@ -163,6 +163,8 @@ $breakpoints: (
     .logo{
         height: 8em;
         background-image: url(img/logo_small.png);
+    .imgBlog{
+        height: 16em;
     }
 } 
 
@@ -184,6 +186,10 @@ $breakpoints: (
 
     .logo{
         height: 13em;
+    }
+
+    .imgBlog{
+        height: 12em;
     }
 } 
 
