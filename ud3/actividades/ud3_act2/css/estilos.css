@@ -682,10 +682,13 @@ footer nav ul li a:hover {
     display: none;
   }
 }
-@media screen and (min-width: ) and (max-width: 759px) {
+@media screen and (max-width: 759px) {
   /* Ejemplo de uso media query para resoluciones SMALL */
+  .imgBlog {
+    height: 16em;
+  }
 }
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 760px) and (max-width: 1199px) {
   /* Ejemplo de uso media query para resoluciones MEDIUM */
   footer nav ul {
     justify-content: space-around;
