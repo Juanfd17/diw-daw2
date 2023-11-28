@@ -307,13 +307,12 @@ footer {
   background-color: #0099cc;
 }
 
-#menu-responsive li:not(:first-child) {
-  display: none;
-}
-
 @media screen and (max-width: 759px) {
-  .responsive li {
-    display: block !important;
+  #menu-responsive li:not(:first-child) {
+    display: none;
+  }
+  #menu-responsive.responsive li {
+    display: block;
   }
 }
 @media screen and (min-width: 760px) and (max-width: 1199px) {
@@ -322,7 +321,7 @@ footer {
     visibility: hidden;
   }
   #menu-responsive li:not(:first-child) {
-    display: block !important;
+    display: block;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -331,6 +330,6 @@ footer {
     visibility: hidden;
   }
   #menu-responsive li:not(:first-child) {
-    display: block !important;
+    display: block;
   }
 }

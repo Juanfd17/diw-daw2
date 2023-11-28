@@ -87,7 +87,7 @@ $breakpoints: (
 @mixin breakpoint($min,$max){ 
     @if($min==false){
         @media screen and (max-width:$max) {
-            @content;
+                @content;
         }
     }
 
@@ -95,12 +95,30 @@ $breakpoints: (
         @media screen and (min-width:$min) {
             @content;
         }
-    }
+       }
 
     @else{
         @media screen and (min-width:$min) and (max-width:$max){
             @content;
         }
+       }
+    }
+
+ 
+
+
+@each $nombre,$res in $breakpoints{
+    $min:nth($res,1);
+    $max:nth($res,2);
+
+    @include breakpoint($min,$max){
+        @for $i from 1 through $columnas {
+            .col-#{$nombre}-#{$i}{grid-column-end: span $i};
+            @if($i != $columnas){
+                .margin-#{$nombre}-#{$i}{grid-column-start: $i + 1};
+            }
+        }
+    .hidden-#{$nombre}{ display:none;}
     }
 }
 
@@ -169,7 +187,7 @@ $breakpoints: (
     }
 } 
 
-@include breakpoint(nth(map-get($breakpoints,"xl"),1),nth(map-get($breakpoints,"xl"),2)){
+@include breakpoint(nth(map-get($breakpoints,"lg"),1),nth(map-get($breakpoints,"xl"),2)){
     /* Ejemplo de uso media query para resoluciones LARGE */
 }
 
