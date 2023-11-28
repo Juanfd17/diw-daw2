@@ -65,7 +65,6 @@ $breakpoints: (
 *{
     box-sizing:border-box;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
-    text-align: center;
 }
 
 
@@ -79,9 +78,13 @@ $breakpoints: (
 }
 
 
+[class*="col-"] {
+    padding: 1em;
+    grid-column-end: span 12;
+}
 
-@mixin breakpoint($min,$max){
-     
+
+@mixin breakpoint($min,$max){ 
     @if($min==false){
         @media screen and (max-width:$max) {
                 @content;
@@ -94,7 +97,7 @@ $breakpoints: (
         }
        }
 
-      @else{
+    @else{
         @media screen and (min-width:$min) and (max-width:$max){
             @content;
         }
@@ -119,14 +122,46 @@ $breakpoints: (
     }
 }
 
+@each $nombre,$res in $breakpoints{
+    $min:nth($res,1);
+    $max:nth($res,2);
+
+    @include breakpoint($min,$max){
+        @for $i from 1 through $columnas {
+            .col-#{$nombre}-#{$i}{grid-column-end: span $i};
+            @if($i != $columnas){
+                .margin-#{$nombre}-#{$i}{grid-column-start: $i + 1};
+            }
+        }
+    .hidden-#{$nombre}{ display:none;}
+    }
+}
+
 @include breakpoint(nth(map-get($breakpoints,"sm"),1),nth(map-get($breakpoints,"md"),2)){
     /* Ejemplo de uso media query para resoluciones SMALL */
-  } 
+} 
 
- @include breakpoint(nth(map-get($breakpoints,"md"),1),nth(map-get($breakpoints,"lg"),2)){
+@include breakpoint(nth(map-get($breakpoints,"md"),1),nth(map-get($breakpoints,"lg"),2)){
    /* Ejemplo de uso media query para resoluciones MEDIUM */
- } 
+    footer nav ul {
+        justify-content: space-around;
+    }
 
- @include breakpoint(nth(map-get($breakpoints,"lg"),1),nth(map-get($breakpoints,"xl"),2)){
+    #banner h1{
+        padding: 0;
+        margin: 0;
+    }
+
+    #banner .texto{
+        padding: 0;
+        margin: 0;
+    }
+
+    .logo{
+        height: 13em;
+    }
+} 
+
+@include breakpoint(nth(map-get($breakpoints,"lg"),1),nth(map-get($breakpoints,"xl"),2)){
     /* Ejemplo de uso media query para resoluciones LARGE */
-  }   
+}   
