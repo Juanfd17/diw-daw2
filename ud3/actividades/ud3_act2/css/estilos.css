@@ -88,7 +88,7 @@ main .adorno {
   height: 48px;
 }
 
-article {
+article, section {
   border-radius: 0.5em;
   color: white;
   padding: 1em;
@@ -121,6 +121,37 @@ article p {
 
 #seccion3 .adorno {
   background-image: url(img/secciones/child.png);
+}
+
+#blog1 {
+  background-color: #004682;
+}
+
+#blog2 {
+  background-color: #a42200;
+}
+
+#blog3 {
+  background-color: #22c68b;
+}
+
+.imgBlog {
+  height: 8em;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#blog1 .imgBlog {
+  background-image: url(./img/blog/1.png);
+}
+
+#blog2 .imgBlog {
+  background-image: url(./img/blog/2.png);
+}
+
+#blog3 .imgBlog {
+  background-image: url(./img/blog/3.png);
 }
 
 footer {
