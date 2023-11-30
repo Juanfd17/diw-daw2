@@ -161,6 +161,14 @@ $breakpoints: (
     .imgBlog{
         height: 16em;
     }
+
+    .m-md-0{
+        margin: 0;
+    }
+
+    .p-md-0{
+        padding: 0;
+    }
 }
 
 @include breakpoint(nth(map-get($breakpoints,"lg"),1),nth(map-get($breakpoints,"lg"),2)){
