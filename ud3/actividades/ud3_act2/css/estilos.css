@@ -757,6 +757,15 @@ footer nav ul li a:hover {
   .responsive li {
     display: block !important;
   }
+  #blog1 .imgBlog {
+    background-image: url(./img/blog/1_pequenio.png);
+  }
+  #blog2 .imgBlog {
+    background-image: url(./img/blog/2_pequenio.png);
+  }
+  #blog3 .imgBlog {
+    background-image: url(./img/blog/3_pequenio.png);
+  }
 }
 @media screen and (min-width: 760px) and (max-width: 1199px) {
   #hamburguesa {
@@ -774,5 +783,14 @@ footer nav ul li a:hover {
   }
   #menu-responsive li:not(:first-child) {
     display: block !important;
+  }
+  #blog1 .imgBlog {
+    background-image: url(./img/blog/1_grande.png);
+  }
+  #blog2 .imgBlog {
+    background-image: url(./img/blog/2_grande.png);
+  }
+  #blog3 .imgBlog {
+    background-image: url(./img/blog/3_grande.png);
   }
 }
