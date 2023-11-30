@@ -160,6 +160,13 @@ article p {
   border-radius: 5px;
 }
 
+#formulario .boton {
+  background-color: #008cc6;
+  color: white;
+  border-radius: 0.5em;
+  padding: 1em;
+}
+
 footer {
   background-color: #c4d2dc;
 }
