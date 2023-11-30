@@ -68,7 +68,13 @@ $breakpoints: (
     font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
+.p0{
+    padding: 0 !important;
+}
 
+.m0{
+    margin: 0 !important;
+}
 
 .contenedor{
     display: grid;
@@ -168,7 +174,7 @@ $breakpoints: (
     .imgBlog{
         height: 16em;
     }
-} 
+}
 
 @include breakpoint(nth(map-get($breakpoints,"lg"),1),nth(map-get($breakpoints,"lg"),2)){
    /* Ejemplo de uso media query para resoluciones MEDIUM */
