@@ -129,20 +129,7 @@ $breakpoints: (
     }
 }
 
-@each $nombre,$res in $breakpoints{
-    $min:nth($res,1);
-    $max:nth($res,2);
 
-    @include breakpoint($min,$max){
-        @for $i from 1 through $columnas {
-            .col-#{$nombre}-#{$i}{grid-column-end: span $i};
-            @if($i != $columnas){
-                .margin-#{$nombre}-#{$i}{grid-column-start: $i + 1};
-            }
-        }
-    .hidden-#{$nombre}{ display:none;}
-    }
-}
 
 @include breakpoint(nth(map-get($breakpoints,"md"),1),nth(map-get($breakpoints,"md"),2)){
     /* Ejemplo de uso media query para resoluciones SMALL */
