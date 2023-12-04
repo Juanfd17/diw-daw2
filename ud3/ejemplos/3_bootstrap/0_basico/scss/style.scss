@@ -1,3 +1,15 @@
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+
 .titulo{
     color: red;
+}
+
+.container{
+    background-color: black;
+}
+
+
+.interna{
+    border: 1px solid red;
+    background-color: white;
 }
