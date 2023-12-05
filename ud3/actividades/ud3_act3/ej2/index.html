@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container bg-light m-5 shadow">
+        <div class="row g-2">
+            <header class="col-md-12">
+                <div class="text-center p-3">
+                    <h1 class="display-3">Introduce tus datos</h1>
+                </div>
+            </header>
+
+            <div class="col-12">
+                <form action="">
+                    <div class="row">
+                        <div class="col-md-6 p-3">
+                            <label for="nombre" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="nombre" placeholder="Introduce tu nombre">
+                        </div>
+
+                        <div class="col-md-6 p-3">
+                            <label for="apellidos" class="form-label">Apellidos</label>
+                            <input type="text" class="form-control" id="apellidos" placeholder="Introduce tus apellidos">
+                        </div>
+
+                        <div class="col-md-6 p-3">
+                            <label for="correo" class="form-label">Correo Electronico</label>
+                            <input type="text" class="form-control" id="correo" placeholder="example@gmail.com">
+                        </div>
+
+                        <div class="col-md-6 p-3">
+                            <label for="foto" class="form-label">Fotografia de perfil</label>
+                            <input type="file" class="form-control" id="foto">
+                        </div>
+
+                        <div class="col-md-12 p-3">
+                            <textarea class="form-control" name="mensaje" id="mensaje" placeholder="¿Que nos quieres contar?"></textarea>
+                        </div>
+
+                        <div class="col-md-6 p-3">
+                            <label for="genero" class="form-label">Género</label>
+                            <div class="form-check">
+                                <input type="radio" name="genero" class="form-check-input" id="masculino">
+                                <label for="masculino" class="form-check-label">Masculino</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="radio" name="genero" class="form-check-input" id="femenino">
+                                <label for="femenino" class="form-check-label">Femenino</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="radio" name="genero" class="form-check-input" id="no-binario">
+                                <label for="no-binario" class="form-check-label">No binario</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="radio" name="genero" class="form-check-input" id="no-decir">
+                                <label for="no-decir" class="form-check-label">Prefiero no decirlo</label>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 p-3">
+                            <label for="provincia" class="form-label">Provincia</label>
+                            <select name="provincia" id="provincia" class="form-select mb-3" aria-label="Selección de provincia ">
+                                <option value="badajoz">Badajoz</option>
+                                <option value="p1">Provincia1</option>
+                                <option value="p2">Provincia2</option>
+                            </select>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
