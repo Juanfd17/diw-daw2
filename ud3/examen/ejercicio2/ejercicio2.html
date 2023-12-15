@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="row">
+        <nav class="col-xl-3 col-12 text-warning bg-dark text-center text-xl-start">
+            <p class="ps-3">Productos</p>
+            <p class="ps-3">Stock</p>
+            <p class="ps-3">Ventas</p>
+            <p class="ps-3">Empleados</p>
+        </nav>
+
+        <main class="col-xl-9 col-12 row m-0 p-0">
+            <h1 class="col-12 text-bg-warning text-dark display-4 text-center">Zona de administracion</h1>
+            <h3 class="text-center">Empleados</h3>
+
+            <hr align="left" noshade="noshade" size="2" width="80%" />
+            
+            <div>
+                <table class="table align-middle">
+                    <thead>
+                      <tr>
+                        <th scope="col">Nombre</th>
+                        <th scope="col">Imagen</th>
+                        <th scope="col">Acciones</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="">Empleado1</td>
+                        <td><img src="https://robohash.org/1?size=100x100" class="img-thumbnail" ></td>
+                        <td>
+                            <button type="button" class="btn btn-info text-light" data-bs-toggle="modal" data-bs-target="#empleado1">Ver Detalles</button>
+                            <button type="button" class="btn btn-warning">Editar</button>
+                            <button type="button" class="btn btn-danger">Borrar</button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Empleado2</td>
+                        <td><img src="https://robohash.org/2?size=100x100" class="img-thumbnail" ></td>
+                        <td>
+                            <button type="button" class="btn btn-info text-light" data-bs-toggle="modal" data-bs-target="#empleado2">Ver Detalles</button>
+                            <button type="button" class="btn btn-warning">Editar</button>
+                            <button type="button" class="btn btn-danger">Borrar</button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Empleado3</td>
+                        <td><img src="https://robohash.org/3?size=100x100" class="img-thumbnail" ></td>
+                        <td>
+                            <button type="button" class="btn btn-info text-light" data-bs-toggle="modal" data-bs-target="#empleado3">Ver Detalles</button>
+                            <button type="button" class="btn btn-warning">Editar</button>
+                            <button type="button" class="btn btn-danger">Borrar</button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Empleado4</td>
+                        <td><img src="https://robohash.org/4?size=100x100" class="img-thumbnail" ></td>
+                        <td>
+                            <button type="button" class="btn btn-info text-light" data-bs-toggle="modal" data-bs-target="#empleado4">Ver Detalles</button>
+                            <button type="button" class="btn btn-warning">Editar</button>
+                            <button type="button" class="btn btn-danger">Borrar</button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Empleado5</td>
+                        <td><img src="https://robohash.org/5?size=100x100" class="img-thumbnail" ></td>
+                        <td>
+                            <button type="button" class="btn btn-info text-light" data-bs-toggle="modal" data-bs-target="#empleado5">Ver Detalles</button>
+                            <button type="button" class="btn btn-warning">Editar</button>
+                            <button type="button" class="btn btn-danger">Borrar</button>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+            </div>
+        </main>
+    </div>
+        
+    <div class="modal fade" id="empleado1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Detalles del Empleado1</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <img src="https://robohash.org/1?size=1024x1024" class="img-thumbnail" >
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="empleado2">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Detalles del Empleado2</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <img src="https://robohash.org/2?size=1024x1024" class="img-thumbnail" >
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="empleado3">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Detalles del Empleado3</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <img src="https://robohash.org/3?size=1024x1024" class="img-thumbnail" >
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="empleado4">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Detalles del Empleado4</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <img src="https://robohash.org/4?size=1024x1024" class="img-thumbnail" >
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="empleado5">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Detalles del Empleado5</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <img src="https://robohash.org/5?size=1024x1024" class="img-thumbnail" >
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+</body>
+</html>

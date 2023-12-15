@@ -1,0 +1,26 @@
+#hamburguesa{
+    color: white;
+    padding: $tam-base /2;
+}
+
+
+@include breakpoint(nth(map-get($breakpoints,"sm"),1),nth(map-get($breakpoints,"sm"),2)){
+    #menu-responsive li:not(:first-child){
+        display:none;
+    }
+
+    #menu-responsive.responsive li{
+        display:block;    
+      }
+  } 
+
+  @include breakpoint(nth(map-get($breakpoints,"lg"),1),nth(map-get($breakpoints,"lg"),2)){
+    #hamburguesa{
+        display:none;
+        visibility: hidden;
+    }
+
+    #menu-responsive li:not(:first-child){
+        display:block;
+    }
+  } 

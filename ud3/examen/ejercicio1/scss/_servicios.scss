@@ -1,0 +1,21 @@
+#servicios{
+   
+    article{
+       align-items: center;
+        i{
+            font-size:2*$tam-base;
+            color:$color-botones;
+            
+        }
+        h4{
+            color:$color-botones;
+            text-align: start;
+            padding-bottom: $tam-base;
+           
+        }
+        p{
+            color:$color-titulo;
+            text-align: justify;
+        }
+    }
+}

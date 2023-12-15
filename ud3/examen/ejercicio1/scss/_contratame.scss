@@ -1,0 +1,20 @@
+#contratame{
+    
+    #texto-contratame{
+       
+        h3{
+            @include titulo;
+        }
+
+        h4{
+            color:$color-botones;
+           
+        }
+        a{
+            @include boton; 
+    
+        }
+
+    }
+
+}

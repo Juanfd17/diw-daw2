@@ -1,0 +1,21 @@
+
+
+
+#banner{
+    #contenido-banner{
+        color:$color-botones;
+       
+        h1{ 
+            text-transform: uppercase;
+            font-size:2*$tam-base;
+        }
+        h3{
+            font-size:$tam-base;
+        }
+        #botones{
+            a{
+             @include boton;
+            }
+        }
+    }
+}

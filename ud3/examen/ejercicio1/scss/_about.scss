@@ -1,0 +1,22 @@
+#about{
+    background-image: url(../img/sobre_mi.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    #texto-about{
+
+        h3{
+            @include titulo;
+        }
+
+        a{
+            @include boton;
+          
+        }
+        
+        p{
+            text-align: start;
+            padding: $tam-base;
+        }
+    }
+} 

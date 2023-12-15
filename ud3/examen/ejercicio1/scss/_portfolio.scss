@@ -1,0 +1,18 @@
+#portfolio{
+    background-color: $color-fondo-portfolio;
+   
+    h3{
+        @include titulo;
+    }
+
+    img{
+        height: 100%;
+        width: 100%;
+    }
+
+    picture{
+        height: 100%;
+        width: 100%;
+    }
+    
+} 
