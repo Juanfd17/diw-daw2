@@ -1,18 +1,24 @@
-//$warning: red;
-//$primary: green;
-//$spacer: 2rem;
-//
-//@import "../../node_modules/bootstrap/scss/functions";
-//@import "../../node_modules/bootstrap/scss/variables";
-//@import "../../node_modules/bootstrap/scss/mixins";
-//
-//
-//$terciario: #efce81;
-//
-//$colores-media:(
-//    "terciario": $terciario
-//);
-//
-//$theme-colors:map-merge($theme-colors, $colores-media);
-
 @import "../../../node_modules/bootstrap/scss/bootstrap.scss";
+
+.main{
+    height: 80vh;
+}
+.etiquetado{
+    background-image: url("img/imgPrueba.png");
+}
+
+.clasificacion{
+    background-image: url("img/imgPrueba.png");
+}
+
+.img{
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.img1{
+    background-image: url("img/imgPrueba.png");
+    max-height: 30vh;
+    min-height: 30px;
+}

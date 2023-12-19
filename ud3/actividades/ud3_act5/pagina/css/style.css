@@ -11855,3 +11855,26 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+.main {
+  height: 80vh;
+}
+
+.etiquetado {
+  background-image: url("img/imgPrueba.png");
+}
+
+.clasificacion {
+  background-image: url("img/imgPrueba.png");
+}
+
+.img {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.img1 {
+  background-image: url("img/imgPrueba.png");
+  max-height: 30vh;
+  min-height: 30px;
+}
