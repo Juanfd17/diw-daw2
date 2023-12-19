@@ -1,0 +1,18 @@
+//$warning: red;
+//$primary: green;
+//$spacer: 2rem;
+//
+//@import "../../node_modules/bootstrap/scss/functions";
+//@import "../../node_modules/bootstrap/scss/variables";
+//@import "../../node_modules/bootstrap/scss/mixins";
+//
+//
+//$terciario: #efce81;
+//
+//$colores-media:(
+//    "terciario": $terciario
+//);
+//
+//$theme-colors:map-merge($theme-colors, $colores-media);
+
+@import "../../../node_modules/bootstrap/scss/bootstrap.scss";

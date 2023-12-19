@@ -1,0 +1,16 @@
+Bien el índice y la presentación general. Podrías haber puesto portada. 
+
+Bien explicado y descrito. Podrías haber puesto alguna palabra en negrita para facilitar lectura.
+Intenta poner capturas un poco mayores y en mejor definición. Está bien poner saltos de página pero cuidado si la página te queda muy vacía
+
+3.1. Te ha quedado la imagen algo deformada al meterla al Word
+
+Los diseños de los wireframes son claros y bien explicados.
+
+Podrías haber usado otro programa para hacer los gráficos donde no saliera marca de agua.
+
+Bien descrita la paleta de colores.
+Bien justificadas las tipografías.
+Podrías haber puesto algún elemento gráfico concreto.
+
+Buen trabajo Pablo, hay cosillas a pulir pero está en la línea de lo que se pretendía
