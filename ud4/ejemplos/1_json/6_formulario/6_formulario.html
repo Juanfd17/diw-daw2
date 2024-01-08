@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <title>Ejemplos JSON</title>
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <div class="container">
+    <div class="row">
+      
+    <form id="frmMascota" class="col-10 offset-1  pt-3 row needs-validation">
+        <h1 class="display-5">Alta de mascota</h1>
+        <div class="col-lg-4 mb-3">
+          <label for="nombre" class="form-label">Nombre</label>
+          <input type="text" class="form-control" id="txtNombre" required>
+          <div class="invalid-feedback">
+           Introduce el nombre de la criatura
+          </div>
+        </div>
+        <div class="col-lg-4 mb-3">
+          <label for="raza" class="form-label">Raza</label>
+          <select id="raza" class="form-select" required>
+              <option selected disabled value="">Selecciona una raza</option>
+              <option value="Pastor alemán">Pastor alemán</option>
+              <option value="Caniche">Caniche</option>
+              <option value="Salchicha">Salchicha</option>
+              <option value="Otro">Otro</option>
+          </select>
+          <div class="invalid-feedback">
+              Debes indicar la raza del animal
+          </div>
+        </div>
+        
+      <div class="col-lg-4 mb-3">
+        <label for="edad" class="form-label">Edad</label>
+        <input type="number" class="form-control" id="txtEdad" required>
+        <div class="invalid-feedback">
+            Introduce una edad
+            </div>
+      </div>
+
+      <div class="col-12 mb-3">
+        <label for="nombre" class="form-label">URL de la imagen</label>
+        <input type="text" class="form-control" id="txtURL" required>
+        <div class="invalid-feedback">
+         Introduce una URL de imagen
+        </div>
+      </div>
+   
+        <button type="button" id="btnGuardar"  class="col-auto mb-3  btn btn-primary">Nueva mascota</button>
+          <div id="alertaExito" class="alert alert-success alert-dismissible fade hide" role="alert">
+            Se ha dado de alta correctamente a tu mascota.
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+          </div>
+      </form>
+
+<div id="mascotas" class="row">
+
+</div>
+
+     </div> <!-- row -->
+    </div> <!-- container -->
+  
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</body>
+</html>
