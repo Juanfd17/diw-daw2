@@ -13,19 +13,22 @@ let jugador2 = {
     edad:"27",
     posicion:"bateador",
     equipo:"equipo1",
-    imagen:"img/equipo1/jugador1"
+    imagen:"img/equipo1/jugador2"
 }
 
 let jugador3 = {
-    nombre:"jugador1",
-    apellidos:"apellidos1",
-    edad:"26",
+    nombre:"jugador3",
+    apellidos:"apellidos3",
+    edad:"28",
     posicion:"bateador",
     equipo:"equipo1",
-    imagen:"img/equipo1/jugador1"
+    imagen:"img/equipo1/jugador3"
 }
 
-let cadenaJugador1 = JSON.stringify(jugador1)
-let jugador2a = JSON.parse(cadenaJugador1)
+let jugadores = [jugador1, jugador2, jugador3]
 
-console.log(jugador2);
+let cadenaArray = JSON.stringify(jugadores)
+
+let jugadores2 = JSON.parse(cadenaArray)
+
+console.log(jugadores2);
