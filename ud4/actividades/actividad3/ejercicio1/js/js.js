@@ -21,12 +21,13 @@ axios.request(config)
             "      <th scope=\"col\">Imagen</th>\n" +
             "      <th scope=\"col\">Email</th>\n" +
             "    </tr>\n" +
-            "  </thead>\n" +
-            "  <tbody>"
+            "  </thead>\n"
+
 
         for (let resultado of resultados) {
-            tabla.innerHTML +=
-                "<tr>\n" +
+            let tr = document.createElement("tr")
+            tr.innerHTML +=
+                "<tr id='" + n + "'>\n" +
                     "<th scope=\"col\">" + n + "</th>\n" +
                     "<th scope=\"col\">" + resultado.name.first + "</th>\n" +
                     "<th scope=\"col\">" + resultado.name.last + "</th>\n" +
@@ -35,13 +36,13 @@ axios.request(config)
                     "<th scope=\"col\"><button type=\"button\" class=\"btn btn-primary\"><i class=\"bi bi-eye\"></i> Ver detalles</button></th>\n" +
                     "<th scope=\"col\"><button type=\"button\" class=\"btn btn-warning\"><i class=\"bi bi-pencil\"></i> Editar</button>\n</th>\n" +
                     "<th scope=\"col\"><button type=\"button\" class=\"btn btn-danger\"><i class=\"bi bi-trash3\"></i> Borrar</button>\n</th>\n" +
-
                 "</tr>\n"
             n++
+
+            tabla.append(tr)
         }
 
         tabla.innerHTML +=
-            "  </tbody>\n" +
             "</table>"
 
         document.body.append(tabla)
