@@ -82,3 +82,29 @@ function manejadores() {
         })
     })
 }
+
+document.addEventListener("DOMContentLoaded", function() {
+    let botonAniadir = document.querySelector("#aniadirPersonaje");
+        botonAniadir.addEventListener("click", ()=> {
+            let name = document.querySelector("#name").value;
+            let image = document.querySelector("#image").value;
+
+            // Here you can handle the new user data
+            console.log(name, image);
+
+            var formdata = new FormData();
+            formdata.append("name", name);
+            formdata.append("image", image);
+
+            var requestOptions = {
+                method: 'POST',
+                body: formdata,
+                redirect: 'follow'
+            };
+
+            fetch("https://rickandmortyapi.com/api/character", requestOptions)
+                .then(response => response.text())
+                .then(result => console.log(result))
+                .catch(error => console.log('error', error));
+        });
+});
