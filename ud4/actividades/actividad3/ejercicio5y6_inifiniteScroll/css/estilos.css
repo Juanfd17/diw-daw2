@@ -1,0 +1,91 @@
+@charset "UTF-8";
+/* Definición de variables usando CSS.
+   CSS permite definir variables que se pueden usar en cualquier parte del código
+*/
+:root {
+  --dark-cyan: hsl(185, 75%, 39%);
+  --very-dark-desaturated: hsl(229, 23%, 23%);
+  --dark-grayish-blue: hsl(227, 10%, 46%);
+  --dark-gray: hsl(0, 0%, 59%);
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 0.7em;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/*Fondo de la página */
+body {
+  font-family: "Kumbh Sans", sans-serif;
+  background-color: var(--dark-cyan);
+  background-image: url("../images/bg-pattern-top.svg"), url("../images/bg-pattern-bottom.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: right 50vw bottom 50vh, left 50vw top 50vh;
+}
+
+/* Estilos del contenedor.
+    Esta página tiene una única tarjeta centrada 
+*/
+#contenedor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Estilos de la tarjeta */
+.card {
+  background-color: white;
+  width: 30%;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+.card-header {
+  width: 100%;
+  display: block;
+}
+.card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: 1px solid rgba(153, 153, 153, 0.383);
+}
+.card-body-img {
+  width: 30%;
+  border: 5px solid white;
+  border-radius: 50%;
+  margin-top: -53px;
+  background-color: white;
+}
+.card-body-title {
+  margin-top: 2rem;
+  font-size: 1.8rem;
+  text-transform: capitalize;
+}
+.card-body-title span {
+  color: var(--dark-gray);
+  font-weight: 400;
+}
+.card-body-text {
+  color: var(--dark-gray);
+  font-size: 1.6rem;
+  margin-top: 0;
+  margin-bottom: 2rem;
+}
+.card-footer {
+  display: flex;
+  justify-content: space-around;
+}
+.card-footer-social {
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.card-footer-social p {
+  letter-spacing: 1px;
+}
