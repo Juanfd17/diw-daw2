@@ -1,0 +1,19 @@
+@font-face {
+  font-family: "Marvel";
+  src: url("../font/Marvel-Regular.ttf");
+}
+h1 {
+  font-family: "Marvel";
+  letter-spacing: 0px;
+  font-size: 6em;
+}
+
+h5 {
+  font-family: "Bebas Neue";
+  text-transform: uppercase;
+}
+
+.imagen-personaje {
+  max-width: 100%;
+  height: 200px;
+}

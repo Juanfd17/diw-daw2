@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js" integrity="sha512-E8QSvWZ0eCLGk4km3hxSsNmGWbLtSCSUcewDQPQWZF6pEU8GlT8a5fF32wOl1i8ftdMhssTrF/OhyGWwonTcXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script defer src="js/script.js"></script>
+    
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    
+   <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue">
+   
+   <title>Autentificación basada API KEY</title>
+</head>
+<body>
+<div class="container">
+
+    <h1 class="bg-danger text-light text-uppercase text-center p-3 m-3">Marvel</h1>
+  <div id="personajes" class="row">
+ <template class="plantilla-panel">
+    <div class=" col-sm-6 col-xl-3 p-3 d-flex align-items-stretch">
+        <div class="card w-100 ">
+          <img src="http://i.annihil.us/u/prod/marvel/i/mg/2/40/4c0032754da02/landscape_xlarge.jpg" class="imagen-personaje card-img-top mh-200px" alt="...">
+          <div class="card-body d-flex flex-column justify-content-between">
+            <h5 class="card-title">Armadillo</h5>
+            <p class="card-text">No description available</p>
+            <a href="#" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modal-comics">Ver comics</a>
+         </div>
+       </div>   
+      </div>
+    </template> 
+  </div>
+</div>
+
+<div id="modal-comics" class="modal fade modal-lg " tabindex="-1">
+    <div class="modal-dialog modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Titulo</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <table class="table ">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Titulo</th>
+                    <th scope="col">Formato</th>
+                    <th scope="col">Portada</th>
+                  </tr>
+                </thead>
+                <tbody>
+                </tbody>
+                <template class="plantilla-fila">
+                    <tr>
+                        <td class="numero"></td>
+                        <td class="titulo"></td>
+                        <td class="formato"></td>
+                        <td><img class="portada" src="#" /></td>
+                      </tr>
+                </template>
+              </table>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
